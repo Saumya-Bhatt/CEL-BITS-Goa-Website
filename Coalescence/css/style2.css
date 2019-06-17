@@ -1,0 +1,182 @@
+#myVideo
+{
+    position: relative;
+    width:  100%; 
+    
+}
+#services
+{
+    /*background-image: url("https://cdn.pixabay.com/photo/2017/04/14/17/22/lean-startup-2230822_960_720.jpg");
+    background-size: cover;*/
+    background-color: gold;
+}
+@media only screen and (max-width:600px)
+{
+    #intro h1
+    {
+        font-size: 45px;
+    }
+    #intro .btn-get-started
+    {
+        background-color: yellow;
+        color: black;
+    }
+}
+#years > li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    background-color: cornsilk;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+#years > li:hover
+{
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.5s;
+}
+.big-box
+{
+    text-align: center;
+}
+.boxes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boxes > .card
+{
+    margin: 20px;
+}
+.style
+{
+    width: 18rem;
+    box-shadow: 5px 10px 8px #888888;
+    transition: all 1s;
+}
+.style:hover
+{
+    transform: scale(1.1);
+}
+.contact_bg
+{
+    background-color: #111;
+}
+.box
+{
+    padding-bottom: 40px;
+}
+.links
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.team
+{
+    width: 300px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+}
+.individual_box
+{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client_image
+{
+    width: 100px;
+    height: 130px;
+}
+#message
+{
+    display: none;
+    color: white;
+    font-size: 14px;
+}
+.quote
+{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+.act_image
+{
+    height: 220px;
+    width: 320px;
+}
+.act_title
+{
+    font-size: 7em;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    letter-spacing: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    border-bottom: 2px solid black;
+}
+.speaker_image
+{
+    height: 10rem;
+    width: 10rem;
+}
+.speaker_name
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.grid
+{
+    display:grid;
+    grid-gap:20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows:1fr;
+}
+.box_align
+{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width:1100px)
+{
+    #myVideo
+    {
+        display: none;
+    }
+    #intro
+    {
+        background-image: url("../images/background.jpg");
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    .box
+    {
+        text-align: center;
+    }
+    .act_image
+    {
+        width: 380px;
+        height: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .grid
+    {
+        grid-gap: 15px;
+    }
+}
+

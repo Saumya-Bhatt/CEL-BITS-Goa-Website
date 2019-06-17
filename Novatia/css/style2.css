@@ -1,0 +1,45 @@
+.main_heading
+{
+    font-size: 10em;
+    text-transform: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+.grid
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-block
+{
+    width: 350px;
+}
+.about_image
+{
+    width: 480px;
+    height: auto;
+}
+.services-block > span
+{
+    color: gold;
+}
+.small_icon
+{
+    height: 150px;
+    width: 250px;
+}
+@media only screen and (max-width:600px)
+{
+    .main_heading
+    {
+        font-size: 7em;
+    }
+    .about_image
+    {
+        width: 300px;
+    }
+    .services-block
+    {
+        padding: 10px;
+    }
+}

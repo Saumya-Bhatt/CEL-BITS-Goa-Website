@@ -1,0 +1,91 @@
+body
+{
+    background-color: gold;
+}
+.Our
+{
+    font-size: 9em;
+    margin: 80px;
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.seperator_style
+{
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+.initiative_title
+{
+    font-size: 2.5em;
+    font-family: 'Merriweather', serif;
+}
+.initiative_content
+{
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.initiative_box
+{
+    padding-top: 130px;
+}
+.startupboxes
+{
+    margin-top: 40px;
+}
+.startup > img
+{
+    height: 160px;
+    width: 200px;
+    background-color: white;
+    border-right: 2px solid black;
+}
+.startup_content
+{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+}
+.startup
+{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 20px;
+    border: 2px solid black;
+}
+.startup_title
+{
+    font-weight: bold;
+    font-size: 17px;
+}
+.startup_field
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:600px)
+{
+    .startup > img
+    {
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .startup
+    {
+        width: 202px;
+    }
+    .Our
+    {
+        font-size:4em;
+    }
+    .initiative_content
+    {
+        font-size: 1em;
+    }
+    .initiative_title
+    {
+        font-size: 2.2em;
+    }
+}

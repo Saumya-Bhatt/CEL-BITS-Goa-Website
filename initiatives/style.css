@@ -1,0 +1,104 @@
+.quote
+{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    margin: 18px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.info-icon img
+{
+    height: 6em;
+}
+.small-text
+{
+    color: black;
+}
+.box_message
+{
+    width: 300px;
+    margin: 10px;
+}
+.subscribe_input
+{
+    padding: 3px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 20px;
+    color: black;
+}
+.submit
+{
+    margin: 10px;
+    background-color: black;
+    width: 300px;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.submit:hover
+{
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    border: 1px solid yellow;
+    color: yellow;
+}
+.form-control {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    height: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.mycontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mybox
+{
+    margin: 30px;
+}
+.styling
+{
+    color: yellow;
+    font-family: inherit;
+}
+.image_box
+{
+    margin-bottom: 20px;
+}
+.contact_container
+{
+    margin-top: 50px;
+}
+.team_section
+{
+    padding-top: 0px;
+}
+.Upcoming
+{
+    text-align: center;
+    font-size: 2.4em;
+    font-family: "Cambo", "Times New Roman", serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.events
+{
+    background-color: black;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+    
