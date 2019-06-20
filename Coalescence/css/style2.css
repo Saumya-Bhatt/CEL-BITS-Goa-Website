@@ -176,6 +176,33 @@ sub_alert
     color: white;
     display: none;
 }
+.youtube_video
+{
+    padding: 20px;
+    width: 45%;
+    height: 320px;
+}
+.aftermovie_header
+{
+    text-align: center;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    font-size: 1.3em;
+    border-top: 2px solid black;
+}
+#aftermovie
+{
+    background-color: gold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.aftermovie_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 @media only screen and (max-width:1100px)
 {
     #myVideo
@@ -204,6 +231,15 @@ sub_alert
     .grid
     {
         grid-gap: 15px;
+    }
+    #intro
+    {
+        background-image: url("../images/background.jpg");
+        background-size: cover;
+    }
+    .youtube_video
+    {
+        width: 100%;
     }
 }
 
