@@ -112,6 +112,40 @@
     width: 300px;
     padding: 3px;
 }
+.alert
+{
+    padding: 0px;
+    margin-bottom: 2px;
+    display: none;
+}
+.sub_email
+{
+    width: 70%;
+    padding: 3px;
+    border-radius: 3px;
+    color: black;
+    margin-bottom: 20px;
+}
+.sub_button
+{
+    background-color: yellow;
+    width: 150px;
+    padding: 12px;
+    font-size: 1em;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+.sub_button:hover
+{
+    background-color: coral;
+    transition: 0.5s;
+    
+}
 
 
 

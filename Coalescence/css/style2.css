@@ -93,11 +93,26 @@
     width: 100px;
     height: 130px;
 }
-#message
+.name_email
 {
-    display: none;
-    color: white;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+.contact
+{
+    margin: 5px;
+}
+textarea
+{
+    margin: 5px;
+    width: 100%;
+}
+
+.align_button
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 .quote
 {
@@ -148,6 +163,18 @@
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: 1fr;
+}
+.alert
+{
+    text-align: center;
+    color: white;
+    display: none;
+}
+sub_alert
+{
+    text-align: center;
+    color: white;
+    display: none;
 }
 @media only screen and (max-width:1100px)
 {

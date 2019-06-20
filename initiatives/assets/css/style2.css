@@ -64,6 +64,23 @@ body
     font-weight: bold;
     font-size: 14px;
 }
+#contact_form
+{
+    display: flex;
+    flex-direction: column;
+}
+.contact
+{
+    margin: 5px;
+    padding: 3px;
+    border-radius: 3px;
+    color: black;
+}
+.alert
+{
+    margin: 0%;
+    display: none;
+}
 
 @media only screen and (max-width:600px)
 {

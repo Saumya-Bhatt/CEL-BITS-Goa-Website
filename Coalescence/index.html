@@ -27,7 +27,6 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -222,7 +221,6 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-mission.jpg" alt="" class="img-fluid">
                 <!--<div class="icon"><i class="ion-ios-speedometer-outline"></i></div>-->
               </div>
               <h2 class="title"><a href="#">Who we are</a></h2>
@@ -239,7 +237,6 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-plan.jpg" alt="" class="img-fluid">
                 <!--<div class="icon"><i class="ion-ios-list-outline"></i></div>-->
               </div>
               <h2 class="title"><a href="#">Our Plan</a></h2>
@@ -256,7 +253,6 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-vision.jpg" alt="" class="img-fluid">
                 <!--<div class="icon"><i class="ion-ios-eye-outline"></i></div>-->
               </div>
               <h2 class="title"><a href="#">Our Vision</a></h2>
@@ -621,9 +617,7 @@
               <h3>Saul Goodman</h3>
               <h4>Lawyer</h4>
               <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
                 Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
             </div>
   
@@ -632,9 +626,7 @@
               <h3>Jesse Pinkman</h3>
               <h4>Meth Addict</h4>
               <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
                 Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
             </div>
   
@@ -643,9 +635,7 @@
               <h3>Gus Fring</h3>
               <h4>Drug Cartel Owner</h4>
               <p>
-                <img src="img/quote-sign-left.pn" class="quote-sign-left" alt="">
                 Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
             </div>
   
@@ -654,9 +644,7 @@
               <h3>Skyler White</h3>
               <h4>Wife</h4>
               <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
             </div>
   
@@ -665,9 +653,7 @@
               <h3>Walter White</h3>
               <h4>The Cook</h4>
               <p>
-                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
                 Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
               </p>
             </div>
   
@@ -904,29 +890,20 @@
         </div>
 
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
+          <div class="alert">Your Message has been sent!</div>
+          <form id="contact_form" method="POST">
+            <div class="name_email">
+              <input type="text" name="name" id="name" class="contact" placeholder="Your Name" required>
+              <input type="email" name="email" id="email" class="contact" placeholder="Your Email" required>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Your Message" required></textarea>
+            <br>
+            <div class="align_button">
+              <button type="submit" class="submit_button">Submit</button>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
+          
         </div>
 
       </div>
@@ -1016,27 +993,35 @@
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-  <script src="script.js"></script>
-
 </body>
+
+<!--Firebase-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+
+
 </html>
