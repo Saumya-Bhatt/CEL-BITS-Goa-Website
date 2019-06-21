@@ -203,6 +203,10 @@ sub_alert
     flex-wrap: wrap;
     justify-content: center;
 }
+#registrations_message
+{
+    display: none;
+}
 @media only screen and (max-width:1100px)
 {
     #myVideo

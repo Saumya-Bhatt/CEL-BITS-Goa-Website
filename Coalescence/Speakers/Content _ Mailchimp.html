@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://us20.admin.mailchimp.com/content/ -->
+<html class="dj_webkit dj_chrome dj_contentbox overflow-hidden" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>Content | Mailchimp</title>     <meta name="copyright" content="Copyright (c) 2019 Mailchimp. All Rights Reserved."> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">  <meta content="//mailchimp.com/browserconfig.xml" name="msapplication-config"> <meta content="#FFE01B" name="msapplication-TileColor">  <link href="https://cdn-images.mailchimp.com/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"> <link href="https://cdn-images.mailchimp.com/favicons/touch-icon-192.png" rel="icon" sizes="192x192">  <link rel="shortcut icon" href="https://cdn-images.mailchimp.com/favicons/favicon.ico">  <link rel="mask-icon" href="https://cdn-images.mailchimp.com/favicons/mask-icon.svg" color="#241C15">  <link rel="stylesheet" type="text/css" href="./Content _ Mailchimp_files/typefaces.css"> <link rel="stylesheet" type="text/css" href="./Content _ Mailchimp_files/application.css">     
+
+           <script async="" src="./Content _ Mailchimp_files/main.532239b0.js.download"></script><script type="text/javascript" async="" src="./Content _ Mailchimp_files/f.txt"></script><script src="./Content _ Mailchimp_files/ytc.js.download" async=""></script><script src="./Content _ Mailchimp_files/inferredEvents.js.download" async=""></script><script src="./Content _ Mailchimp_files/1592378257726461" async=""></script><script async="" src="./Content _ Mailchimp_files/fbevents.js.download"></script><script async="" src="./Content _ Mailchimp_files/uwt.js.download"></script><script type="text/javascript" async="" src="./Content _ Mailchimp_files/insight.min.js.download"></script><script async="" src="./Content _ Mailchimp_files/core.js.download"></script><script src="./Content _ Mailchimp_files/bat.js.download" async=""></script><script async="" src="./Content _ Mailchimp_files/analytics.js.download"></script><script async="" src="./Content _ Mailchimp_files/gtm.js.download"></script><script mc:noreorder="">
+    window.gtmData = {
+        hasUser: true,
+        userId: 117858286,
+        loginId: "2a083f7cfc7b87899cd9d78f77240ff6",
+        UA: "UA-329148-81",
+        version: "1",
+        gaDimensions: [],
+        deferToGTM: false    };
+
+    (function /* gtmAPI */ () {
+
+        function buildCustomDimensions() {
+            var result = { 9: window.gtmData.version.toString() };
+            if(window.gtmData.hasUser) {
+                result[8] = window.gtmData.userId.toString();
+                result[24] = window.gtmData.loginId.toString();
+            }
+
+            var dims = window.gtmData.gaDimensions;
+            Object.keys(dims).forEach(function(dim) {
+                var index = parseInt(dim.replace('dimension', ''));
+                if(!isNaN(index)) {
+                    // sometimes things get into this array that are not numbered dimensions
+                    result[index] = dims[dim];
+                }
+            });
+            return result;
+        }
+
+        function gtmPayload(hitType, data) {
+            data = data || {};
+
+            data['_gtm_deferred'] = window.gtmData.deferToGTM;
+            data['type'] = hitType;
+            data['UA'] = window.gtmData.UA;
+            data['customDimensions'] = buildCustomDimensions();
+
+            data['customVariables'] = data['customVariables'] || {};
+            data['customVariables']['eventSource'] = 'gtm';
+            return data;
+        }
+
+        /**
+         * Records a GTM event, with custom variables. Accepts either:
+         *
+         *   gtmEvent('event category', { 'foo': 'bar' })
+         *
+         * or:
+         *
+         *   gtmEvent({
+         *     'eventCategory': 'event category',
+         *     'eventAction': 'event action',
+         *     'eventLabel': 'etc',
+         *     'eventValue': 1
+         *    }, { 'foo': 'bar' })
+         *
+         * For eventInfo guidelines see:
+         *   https://support.google.com/analytics/answer/1033068?hl=en
+         */
+        window.gtmEvent = function(eventInfo, customVariables) {
+            if(typeof eventInfo === 'string') {
+                eventInfo = { 'eventCategory': eventInfo };
+            }
+            customVariables = customVariables || {};
+
+            var event = gtmPayload('EVENT', {
+                'event': 'e_action',
+                'eventInfo': eventInfo,
+                'customVariables': customVariables
+            });
+
+            window.dataLayer.push(event);
+        };
+
+        window.dataLayer = [gtmPayload('PAGE')];
+    })();
+</script>  <script mc:noreorder="">
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCZTKL');
+    // setup the GA command queue
+    window['GoogleAnalyticsObject'] = '_ga';
+    window._ga = window._ga || function() {
+        window._ga.q = window._ga.q || [];
+        window._ga.q.push(arguments);
+    };
+</script>
+
+
+ <script mc:noreorder="">
+    function debuglog() {
+        if(typeof window._debug_analytics !== 'undefined' && window._debug_analytics) {
+            console.log.apply(console, arguments);
+        }
+    }
+
+    window.ga = function /*decoratedGoogleAnalytics*/() {
+        var args = [].slice.call(arguments, 0);
+        if (typeof args[0] === 'string'
+            && args[0] !== 'create'
+            && args[0] !== 'provide') {
+            args[0] = 't0.' + args[0];
+        }
+        debuglog('ga', args);
+        return _ga.apply(this, args);
+    };
+
+    (function /*initializeGoogleAnalytics*/() {
+        var gtmData = window.gtmData;
+
+        var dimensions = {
+            USER_ID: 'dimension8',
+            LOGIN_ID: 'dimension24',
+            TRACKING_VERSION: 'dimension9'
+        };
+
+        function trackGA() {
+            if (gtmData.hasUser) {
+                ga("create", gtmData.UA, "auto", {
+                    allowLinker: false,
+                    userId: gtmData.userId,
+                    name: 't0'
+                });
+
+                ga("set", dimensions.USER_ID, gtmData.userId.toString());
+                ga("set", dimensions.LOGIN_ID, gtmData.loginId.toString());
+            } else {
+                ga("create", gtmData.UA, "auto", {
+                    allowLinker: false,
+                    name: 't0'
+                });
+            }
+
+            ga("set", "transport", "beacon");
+
+            ga("set", dimensions.TRACKING_VERSION, gtmData.version);
+
+            ga("require","linker");
+            ga("linker:autoLink", [/(.*\.)?mailchimp(app)?\.com$/], !1,!0);
+
+            // Add logging in the console for interesting params
+            // see: https://developers.google.com/analytics/devguides/collection/analyticsjs/tasks
+            // TODO: Move logging into a UI (details TBD)
+            ga(function (tracker) {
+                var originalSendHitTask = tracker.get("sendHitTask");
+                tracker.set("sendHitTask", function(model) {
+                    originalSendHitTask(model);
+                    var payload = model.get("hitPayload");
+
+                    if ("URLSearchParams" in window) {
+                        var params = new URLSearchParams(payload.toString());
+
+                        console.group("%cEvent tracking", "color: #241C15; background-color: #FF3EBF; padding: 4px; font-weight: 400;");
+                        console.log("Hit type (t)\t\t", params.get("t"));
+                        console.log("Event category (ec)\t", params.get("ec"));
+                        console.log("Event action (ea)\t", params.get("ea"));
+                        console.log("Event label (el)\t", params.get("el"));
+                        console.groupEnd();
+                    }
+                });
+            });
+
+            ga("send", "pageview", gtmData.gaDimensions);
+        }
+
+        if (!gtmData.deferToGTM) {
+            trackGA();
+        }
+    })();
+</script>      <script src="./Content _ Mailchimp_files/f(1).txt"></script><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head> <body class="mcd   relative full-height-vh flex flex-col overflow-hidden e-content_tab absolute full-height"><div style="display: none;" id="lightningjs-usabilla_live"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Content _ Mailchimp_files/saved_resource.html"></iframe></div></div>  <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCZTKL" height="0" width="0" style="display:none;visibility:hidden"> </iframe> </noscript>                  <div class="novip">  <div data-dojo-type="mojo/widgets/MainNavigation" class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0" id="uniqName_10_0" lang="en" widgetid="uniqName_10_0">   <div class="line selfclear">  <nav class="navigation-left float-left"> <ul class="linear-list selfclear">  <li class="nav-link show-mobile"> <button type="button" aria-label="Open navigation" data-dojo-attach-point="hamburger" mc:track-action="Hamburger" class="menu-button no-delay navigationItem c-navigationItem_button alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Hamburger&#39;, &#39;icon&#39;);"><span class="freddicon hamburger"></span></button> </li>  <li class="nav-link branding"> <a mc:track-action="Home" href="https://us20.admin.mailchimp.com/" aria-label="Main dashboard" class="no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0" id="freddielink" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Home&#39;, &#39;/&#39;);"> <img src="./Content _ Mailchimp_files/mc-freddie-dark.svg" width="38" height="38" alt="Mailchimp logo" role="presentation">                                             </a> </li>
+
+                                                            <li class="nav-link hide-mobile flex align-items--baseline"> <a href="https://us20.admin.mailchimp.com/campaigns" aria-label="Campaigns" title="Design and send campaigns" class="  navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked link-getLabel&#39;, &#39;link-getUri&#39;);">
+                                Campaigns                            </a>  </li>
+                                                                                <li class="nav-link hide-mobile flex align-items--baseline"> <a href="https://us20.admin.mailchimp.com/templates" aria-label="Templates" title="Our pre-designed templates help you quickly create and build emails that are tailored to fit your brand." class="  navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked link-getLabel&#39;, &#39;link-getUri&#39;);">
+                                Templates                            </a>  </li>
+                                                                                <li class="nav-link hide-mobile flex align-items--baseline"> <a href="https://us20.admin.mailchimp.com/audience" aria-label="Audience" title="View the members of your audience" class="  navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked link-getLabel&#39;, &#39;link-getUri&#39;);">
+                                Audience                            </a>  </li>
+                                                                                <li class="nav-link hide-mobile flex align-items--baseline"> <a href="https://us20.admin.mailchimp.com/reports" aria-label="Reports" title="Track the outcome of your campaigns" class="  navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked link-getLabel&#39;, &#39;link-getUri&#39;);">
+                                Reports                            </a>  </li>
+                                                                                <li class="nav-link hide-mobile flex align-items--baseline"> <a href="https://us20.admin.mailchimp.com/content" aria-label="Content Studio" title="Upload images, documents, and other files to the Content Studio and share them across all of your marketing channels." class="selected  navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked link-getLabel&#39;, &#39;link-getUri&#39;);">
+                                Content Studio                            </a>  </li>
+                                    
+                   </ul> </nav>  <nav class="float-right flex">             
+               
+                                                
+            
+            <ul class="linear-list selfclear">  <li class="nav-link full-height"> <a mc:track-action="Clicked Account" data-dojo-attach-point="accountButton" href="https://us20.admin.mailchimp.com/content/#" class="account-button no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0 hide-phone" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Account&#39;, &#39;(not set)&#39;);"> <div role="presentation" class="logged-in-avatar inline-block avatar !margin--lv0" style="background-image: url(https://gallery.mailchimp.com/c0caec37025f59c8c463cc732/avatar/logo.jpeg)">  </div> <div aria-label="Signed in as Yash - click to toggle account menu" class="account-name inline-block hide-mobile valign-middle alignl margin--lv2 !margin-top-bottom--lv0 !margin-right--lv0"> <span aria-label="Signed in as Yash">Yash</span><br> <span class="fwn" aria-label="Account name">Center for Entrepreneurial and Leadership, BITS Goa</span> </div> <span class="inline-block freddicon menu-down margin--lv1 !margin-top-bottom--lv0 !margin-right--lv0"></span> </a> </li>  <li class="nav-link full-height"><a mc:track-action="Clicked Help" data-dojo-attach-point="helpButton" title="Get help by referring to the knowledge base articles, answers and glossary" aria-label="Get help by referring to the knowledge base articles, answers and glossary" href="https://us20.admin.mailchimp.com/content/#" class="nav-help-button no-delay navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Help&#39;, &#39;(not set)&#39;);">Help</a></li>  <li class="nav-link full-height"><a mc:track-action="Clicked Search" data-dojo-attach-point="searchButton" aria-label="Global search" href="https://us20.admin.mailchimp.com/content/#" class="nav-search-button no-delay navigationItem text-align--center padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Search&#39;, &#39;icon&#39;);"><span class="freddicon search !margin--lv0"></span></a></li> </ul> </nav> </div> </div>    <div data-dojo-type="mojo/widgets/PhoneNavigation" aria-hidden="true" class="phone-overlay-container c-baseOverlay selfclear" role="navigation" id="uniqName_18_0" lang="en" widgetid="uniqName_18_0">  <div data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-left freddicon cross absolute cursor-pointer"></div>  <div class="line selfclear"> <nav class="mobile-nav lastGroup size1of1 overflow-visible selfclear"> <ul mc:track="phone navigation" class="primary-links selfclear">
+                                                            <li> <a href="https://us20.admin.mailchimp.com/campaigns" aria-label="Campaigns" title="Design and send campaigns" class=" phone-menu-link relative padding--lv3">
+                                Campaigns                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/templates" aria-label="Templates" title="Our pre-designed templates help you quickly create and build emails that are tailored to fit your brand." class=" phone-menu-link relative padding--lv3">
+                                Templates                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/audience" aria-label="Audience" title="View the members of your audience" class=" phone-menu-link relative padding--lv3">
+                                Audience                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/reports" aria-label="Reports" title="Track the outcome of your campaigns" class=" phone-menu-link relative padding--lv3">
+                                Reports                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/content" aria-label="Content Studio" title="Upload images, documents, and other files to the Content Studio and share them across all of your marketing channels." class="selected phone-menu-link relative padding--lv3">
+                                Content Studio                            </a> </li>
+                                                    <li><hr class="margin--lv4 !margin-left-right--lv0 !margin-bottom--lv0"></li>  <li class="padding--lv3 !padding-left--lv0"> <div class="media lastGroup size1of1 overflow-visible selfclear"> <div role="presentation" class="media-image margin--lv3 !margin-top-bottom--lv0"> <div role="presentation" class="c-mobileNavigationAvatar padding--lv4" style="background-image: url(https://gallery.mailchimp.com/c0caec37025f59c8c463cc732/avatar/logo.jpeg); background-size: contain;"></div> </div> <div class="media-body"> <p class="fwb !margin--lv0">Center for Entrepreneurial and Leadership, BITS Goa</p> <p class="!margin--lv0" aria-label="Signed in as Yash">Yash <span class="badge success capitalize inline-block valign-middle">owner</span></p> </div> </div> </li> </ul> </nav>  <div class="phone-account-menu sliding-card--mask sliding-card--phone-mask selfclear"> <div class="sliding-card--container sliding-card--phone-container relative"> <nav class="sliding-card sliding-card--phone selfclear" role="navigation"> <ul mc:track="phone navigation" class="selfclear">   <li> <a data-dojo-attach-point="slideNotifications" id="phone-notifications-link" mc:track-label="phone-menu notifications" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/content/#"> Notifications<span class="float-right freddicon menu-right-on-right"></span> <span class="badge notification float-right account-menu_notificationBadge hide" data-mc-notification-count="" style="display:none;">0</span> </a> </li>    <li><a mc:track-label="phone-menu profile" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/account/profile/">Profile</a></li>  <li><a mc:track-label="phone-menu connected-sites" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/account/connected-sites/">Connected Sites</a></li>  <li> <a mc:track-label="phone-menu account-settings" href="https://us20.admin.mailchimp.com/account/" class="phone-menu-link relative padding--lv3"> Account  </a> </li>  <li><a mc:track-label="phone-menu logout" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/login/out/">Log Out</a></li> </ul> </nav><p class="c-legalNotice margin-bottom--lv0 padding--lv3 padding-bottom--lv2 padding-top--lv2"> <a class="textcolor--secondary" href="http://mailchimp.com/legal/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a class="textcolor--secondary" href="http://mailchimp.com/legal/" target="_blank" rel="noopener noreferrer">Terms</a> </p>   <div data-dojo-attach-point="notificationsCard" class="sliding-card sliding-card--phone sliding-card--phone-notifications absolute" data-dojo-type="mojo/widgets/Notifications" id="dijit__AttachMixin_0" lang="en" widgetid="dijit__AttachMixin_0"> <ul class="selfclear"> <li class="sliding-card--sticky padding--lv3 alignc fwb flex flex-between"> <a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="slideBackNotifications" class="sliding-card--back fwn"><span class="freddicon menu-left-on-left"></span>Back</a> <span>Notifications</span> <a data-dojo-attach-point="dismissAllNotifications" href="javascript:;" class="sliding-card--back fwn invisible">Dismiss All</a> </li>  <li class="padding--lv3" data-dojo-attach-point="noDataDom" style=""> <div class="no-notifications alignc"> <div class="c-noDataBlock_icon margin-bottom--lv1" style="background-image: url(/images/brand_assets/illos/art-empty-notifications.png)"></div> <p>No notifications right now.</p> </div> </li>  <li style="display:none;"> <ul class="notification-list--app">     </ul> </li> </ul> </div>  <div data-dojo-attach-point="accountCard" class="sliding-card sliding-card--phone sliding-card--phone-accounts absolute"> <ul class="phone-account-list" role="navigation"> <li class="sliding-card--sticky padding--lv3 alignc fwb"><a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="slideBackAccount" class="sliding-card--back absolute fwn"><span class="freddicon menu-left-on-left"></span>Back</a>Switch Account</li>   <li class="acl-account" data-account-name="Center for Entrepreneurial and Leadership, BITS Goa" title="Signed in as Center for Entrepreneurial and Leadership, BITS Goa"> <a href="https://us20.admin.mailchimp.com/content/#" class="account-link nolink padding--lv3 border-bottom">Center for Entrepreneurial and Leadership, BITS Goa <span role="presentation" class="freddicon tick float-right"></span> </a>  </li> </ul> </div> </div> </div> </div> </div>   <div data-dojo-type="mojo/widgets/TabletNavigation" aria-hidden="true" class="tablet-overlay-container c-baseOverlay selfclear hide-phone" role="navigation" id="uniqName_10_1" lang="en" widgetid="uniqName_10_1">  <button type="button" id="close-tablet-nav" aria-label="Close navigation" data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-left c-overlayCloseButton absolute cursor-pointer"><span class="freddicon cross"></span></button>  <div class="line selfclear"> <nav class="mobile-nav lastGroup size1of3 centered selfclear"> <ul mc:track="tablet navigation" class="alignc selfclear">
+                                                            <li> <a href="https://us20.admin.mailchimp.com/campaigns" aria-label="Campaigns" title="Design and send campaigns" class=" tablet-menu-link inline-block relative padding--lv5">
+                                Campaigns                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/templates" aria-label="Templates" title="Our pre-designed templates help you quickly create and build emails that are tailored to fit your brand." class=" tablet-menu-link inline-block relative padding--lv5">
+                                Templates                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/audience" aria-label="Audience" title="View the members of your audience" class=" tablet-menu-link inline-block relative padding--lv5">
+                                Audience                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/reports" aria-label="Reports" title="Track the outcome of your campaigns" class=" tablet-menu-link inline-block relative padding--lv5">
+                                Reports                            </a> </li>
+                                                                                <li> <a href="https://us20.admin.mailchimp.com/content" aria-label="Content Studio" title="Upload images, documents, and other files to the Content Studio and share them across all of your marketing channels." class="selected tablet-menu-link inline-block relative padding--lv5">
+                                Content Studio                            </a> </li>
+                                                </ul> </nav> </div> </div>     <div data-dojo-type="mojo/widgets/AccountMenu" class="account-menu sliding-card--mask border-radius--lv2 border-gray selfclear fixed hide-phone" aria-hidden="true" id="uniqName_18_1" lang="en" widgetid="uniqName_18_1"> <div class="sliding-card--container relative">  <nav class="sliding-card bg-white selfclear" role="navigation"> <ul class="small-meta">   <li class="border-bottom"> <a data-dojo-attach-point="slideNotifications" mc:track="" href="javascript:;" id="notifications-link" class="account-link nolink padding--lv3">Notifications <span class="freddicon menu-right-on-right float-right" role="presentation"></span> <span class="badge notification float-right account-menu_notificationBadge hide" data-mc-notification-count="" style="display:none;">0</span> </a> </li>    <li class="border-bottom"><a mc:track="" href="https://us20.admin.mailchimp.com/account/profile/" class="account-link nolink padding--lv3">Profile</a></li>  <li class="border-bottom"> <a mc:track="" href="https://us20.admin.mailchimp.com/account/connected-sites/" class="account-link nolink padding--lv3" data-dojo-attach-point="connectedSitesNode">  <div id="dijit__WidgetsInTemplateMixin_0" lang="en" widgetid="dijit__WidgetsInTemplateMixin_0">Connected Sites</div> </a> </li>    <li class="border-bottom"> <a mc:track="" href="https://us20.admin.mailchimp.com/account/" class="account-link nolink padding--lv3 display--flex justify-content--space-between align-items--baseline"> Account  </a> </li>     <li><a mc:track="" href="https://us20.admin.mailchimp.com/login/out/" class="account-link nolink padding--lv3">Log Out</a></li> </ul> </nav><p class="border-top c-legalNotice margin-bottom--lv0 padding--lv3 padding-bottom--lv2 padding-top--lv2 bg-white"> <a class="textcolor--secondary" href="http://mailchimp.com/legal/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a class="textcolor--secondary" href="http://mailchimp.com/legal/" target="_blank" rel="noopener noreferrer">Terms</a> </p>   <div data-dojo-attach-point="notificationsCard" class="sliding-card bg-white sliding-card--notifications absolute" data-dojo-type="mojo/widgets/Notifications" id="dijit__AttachMixin_1" lang="en" widgetid="dijit__AttachMixin_1"> <div class="small-meta sliding-card--sticky padding-top--lv2 padding-bottom--lv2 padding-left--lv3 padding-right--lv3 font-weight--bold alignc flex flex-between"> <a data-dojo-attach-point="slideBackNotifications" href="javascript:;" class="sliding-card--back fwn"><span class="freddicon menu-left-on-left"></span>Back</a> <span class="padding-left--lv1 inline-block">Notifications</span> <a data-dojo-attach-point="dismissAllNotifications" href="javascript:;" class="sliding-card--back fwn invisible">Dismiss All</a> </div> <ul class="small-meta relative notification-list overflow-y--auto">  <li class="padding--lv2 !padding-top-bottom--lv0" data-dojo-attach-point="noDataDom" style=""> <div class="no-notifications alignc"> <div class="c-noDataBlock_icon c-noDataBlock_icon--compact margin-bottom--lv1" style="background-image: url(/images/brand_assets/illos/art-empty-notifications.png)"></div> <p>No notifications right now.</p> </div> </li>  <li class="padding--lv3 !padding-top-bottom--lv0" style="display:none;"> <ul class="notification-list--app overflow-y--auto overflow-x--hidden">     </ul> </li> </ul> </div>  <div data-dojo-attach-point="accountCard" class="sliding-card bg-white sliding-card--accounts absolute"> <ul class="account-list small-meta" role="navigation"> <li class="sliding-card--sticky padding--lv3 font-weight--bold alignc"><a data-dojo-attach-point="slideBackAccount" href="javascript:;" class="sliding-card--back absolute fwn"><span class="freddicon menu-left-on-left"></span>Back</a>Switch Account</li>   <li class="acl-account" data-account-name="Center for Entrepreneurial and Leadership, BITS Goa" title="Signed in as Center for Entrepreneurial and Leadership, BITS Goa"> <a href="https://us20.admin.mailchimp.com/content/#" class="account-link nolink padding--lv3 border-bottom">Center for Entrepreneurial and Leadership, BITS Goa <span role="presentation" class="freddicon tick float-right"></span> </a>  </li> </ul> </div> </div> </div>   <div data-dojo-type="mojo/widgets/GlobalSearch" role="search" aria-hidden="true" class="search-overlay-container c-baseOverlay selfclear" id="uniqName_10_2" lang="en" widgetid="uniqName_10_2">  <div data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-right freddicon cross absolute cursor-pointer"></div> <div class="global-search mc-small-content">   <form data-dojo-attach-point="globalSearchForm" id="main-search" class="!margin-bottom--lv8" method="get" url="/search" novalidate="novalidate"> <h2 class="alignc !margin-bottom--lv4 fwb">Search Campaigns and Contacts</h2>  <div class="big-search-container relative !margin-bottom--lv3">   <table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitValidationTextBox dijitDownArrowButton big-search-filter small-select" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" lang="en" id="search-filter" style="user-select: none;" widgetid="search-filter" aria-expanded="false" aria-invalid="false"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitButtonContents overflow--hidden white-space--normal" role="presentation"><div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">Everything</span></div><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" name="entities" data-dojo-attach-point="valueNode" value="all" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation"><input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td></tr></tbody></table>  <input data-dojo-attach-point="globalSearchField" data-dojo-props="intermediateChanges:true" id="global-search" name="global-search" class="big-search-field !margin--lv0 full-width av-search" type="search" tabindex="0" autofocus="autofocus" placeholder="Search everything">  <span class="big-search-controls"> <span data-dojo-attach-point="clearIcon" class="freddicon cross clear-search hide cursor-pointer absolute"></span> <button data-dojo-attach-point="searchIcon" type="submit" class="icon-search button freddicon solidsearch !margin--lv0"></button> </span>  <div data-dojo-attach-point="loadIcon" class="loading-search hide padding--lv5 absolute"></div> </div> <div class="line !margin-bottom--lv3"> <div class="lastUnit size1of1 alignc small-meta"> <a href="javascript:;" id="search-tips" title="Search Tips" onclick="mojo.utils.toggleEl(this, &#39;hotkey-help-search-pane&#39;, &#39;Advanced search keywords&#39;, &#39;Close advanced search keywords&#39;); return false;">Advanced search keywords</a> </div> </div>  <div id="hotkey-help-search-pane" class="hotkey-help-search-pane !margin-bottom--lv5 bg-white border-gray border-radius--lv1 padding--lv4 relative" style="display:none;"> <div data-dojo-attach-point="keywords" class="line main-section"> <div class="sub-section"> <p class="alignc full-width">Use the keywords below to help find what you’re looking for.</p> <p class="alignc full-width">Type <code class="badge success">keyword</code> followed by <code class="badge">:</code> and <code class="badge warning">your query</code></p> <p class="alignc full-width">For example, <code>subject:holidays</code> or <code>email:google.com</code>.</p> </div> <div class="line sub-section"> <div class="group size1of2"> <h4>Campaigns</h4> <ul class="dotted-list list-squished"> <li class="code searchkeyword"><a href="javascript:;">fromname:</a></li> <li class="code searchkeyword"><a href="javascript:;">subject:</a></li> <li class="code searchkeyword"><a href="javascript:;">name:</a></li> <li class="code searchkeyword"><a href="javascript:;">type:regular</a></li> <li class="code searchkeyword"><a href="javascript:;">type:automation</a></li> <li class="code searchkeyword"><a href="javascript:;">type:rss</a></li> <li class="code searchkeyword"><a href="javascript:;">type:ad</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:draft</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:sent</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:sending</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:draft</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:completed</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:active</a></li> </ul> </div> <div class="lastGroup size1of2"> <h4>Lists</h4> <ul class="dotted-list list-squished !margin--lv0"> <li class="code searchkeyword"><a href="javascript:;">email:</a></li> <li class="code searchkeyword"><a href="javascript:;">merge1:</a></li> <li class="code searchkeyword"><a href="javascript:;">merge2:</a></li> </ul> </div> </div> </div> </div> <input type="hidden" name="__csrf_token" id="" value="36a13a01e8dcdcb1605204e2164b15050652f136" class="av-hidden"></form>  <div data-dojo-attach-point="searchError" class="line section hide search-error"> <div class="feedback-block error"> <div class="lastUnit size1of1"> <div class="media"> <div class="media-image"> <span class="freddicon not-allowed"></span> </div> <div class="media-body"> <h4>Something went wrong.</h4> <p>There was an error processing the request.</p> </div> </div> </div> </div> </div>  <div data-dojo-attach-point="searchCount" id="search-count" class="lastUnit size1of1 !padding--lv0 hide !margin-bottom--lv1"> <p class="!margin--lv0 full-width"> <span data-dojo-attach-point="totalCount" class="result-count-total fwb">0</span> </p> </div>  <div data-dojo-attach-point="searchResults" id="search-results-data"> <div class="results"></div> </div> </div> </div>   <div data-dojo-type="mojo/widgets/KbSearch" class="kb-overlay-container c-baseOverlay selfclear" role="search" aria-hidden="true" id="uniqName_10_3" lang="en" widgetid="uniqName_10_3">  <div title="Close menu" data-dojo-attach-point="closeButton" class="close-overlay close-right freddicon cross absolute cursor-pointer"></div> <div> <div data-dojo-attach-point="searchPanel" class="global-search mc-small-content"> <div data-dojo-attach-point="topUpgrade" style="display:none;">  <div class="support-upgrade-container"> <img class="support-upgrade-container__image" src="./Content _ Mailchimp_files/support_illustration.png"> <div class="support-upgrade-container__content"> <h4 class="support-upgrade-container__heading">Need to chat with support?</h4> <p>Get one-on-one help from our support team when you upgrade to a paid plan.</p> <div class="button-group"> <a class="button p1" href="javascript:" data-dojo-attach-point="topUpgradeButton" role="button">Upgrade Now</a> <a href="javascript:" data-dojo-attach-point="dismissTopUpgrade">No thanks</a> </div> </div> </div>  </div> <form data-dojo-attach-point="searchForm" class="kb-search !margin-bottom--lv8" method="get" novalidate="novalidate"> <h2 class="alignc !margin-bottom--lv4 fwb">Search the Knowledge Base</h2>  <div class="big-search-container relative !margin-bottom--lv3">  <input data-dojo-attach-point="searchInput" name="kb-search" class="big-search-field !margin--lv0 full-width av-search" type="search" tabindex="0" autofocus="autofocus" placeholder="Search articles" id="kb-search">  <span class="big-search-controls"> <span data-dojo-attach-point="clearIcon" class="freddicon cross clear-search hide cursor-pointer absolute"></span> <button data-dojo-attach-point="searchIcon" type="submit" class="button freddicon solidsearch !margin--lv0"></button> </span>  <div class="loading-search hide padding--lv5 absolute" data-dojo-attach-point="searchLoader"></div> </div> <input type="hidden" name="__csrf_token" id="" value="36a13a01e8dcdcb1605204e2164b15050652f136" class="av-hidden"></form>   <div class="line section hide search-error"> <div class="feedback-block error"> <div class="lastUnit size1of1"> <div class="media"> <div class="media-image"> <span class="freddicon not-allowed"></span> </div> <div class="media-body"> <h4>Something went wrong.</h4> <p>There was an error processing the request.</p> </div> </div> </div> </div> </div>  <div id="kb-recommended" class="kb-recommended line main-section" data-dojo-attach-point="recommendedContainer"> <div class="lastGroup size1of1"> <h3>Recommended Articles</h3> <div data-dojo-attach-point="inlineUpgrade" style="display:none;"> <ul class="recommended-articles"> <li class="padding--lv3 !padding-left-right--lv0 border-bottom"> <h4 class="kb-heading !margin--lv0"> <a href="javascript:" data-dojo-attach-point="inlineUpgradeButton"> Need to chat with support? <span class="badge info">Upgrade</span> </a> </h4> <p class="kb-content !margin--lv0"> Get one-on-one help from our support team when you upgrade to a paid plan. </p> </li> </ul>  </div> <ul class="recommended-articles" data-dojo-attach-point="recommendedArticlesContainer"> </ul> </div> </div>  <div id="kb-results" class="line main-section" data-dojo-attach-point="resultsContainer" style="display: none;"> <div class="lastGroup size1of1 section">  <div class="line" data-dojo-attach-point="resultsList"></div> </div> </div> </div> <div data-dojo-attach-point="contentPanel" class="global-search mc-small-content" style="display: none;"> <a class="p !margin-bottom--lv6" href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="backLink"> <span class="freddicon menu-left-on-left" role="presentation" aria-hidden="true"></span>Back to Search </a> <div data-dojo-attach-point="contentContainer"></div> </div> </div> </div>  </div>  <div id="slot-campaignChecklistStatusBar"></div> <div id="slot-supportKnobWindow"></div>  <div id="wrap" class="wrap flex flex-direction--column overflow-auto-y overflow-hidden-x v-clearSafeAreaInset">  <div id="slot-preMainContent"></div>  <div id="main-content" class="main-content mc-content flex flex-col selfclear">  <div class="lastUnit size1of1 overflow-visible flex-shrink-none"> <div id="av-flash-block" class="c-flashBlock">     </div> </div>    <div role="main" id="content" class="content selfclear relative"> <div class="lastUnit size1of1 header selfclear"> </div>  <div style="display: none; visibility: hidden;">  </div>  </div>  <div>  </div> </div> </div>       <script src="./Content _ Mailchimp_files/ZeroClipboard.min.js.download"></script><script type="text/javascript">
+    var xhr_open = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url, async, user, password) {
+        xhr_open.call(this, method, url, async, user, password);
+        if (url.match(/^\/(?!\/)+/)) {
+            this.setRequestHeader('X-CSRF-Token', '36a13a01e8dcdcb1605204e2164b15050652f136');
+        }
+    }
+</script><script src="./Content _ Mailchimp_files/dojo.js.download" data-dojo-config="parseOnLoad: true, usePlainJson: true, isDebug: false"></script><script src="./Content _ Mailchimp_files/mccommon.js.download"></script><script type="text/javascript">
+    // The following dojo require places mojo.utils on the window.
+    // Many html files and javascript views rely on this property existing.
+    // Search for "mojo.utils" in any *.html files, and you'll find the hundreds of cases.
+    // Leaving this for historical reasons, but eventually migrating those usages would be good.
+    dojo.require("mojo.utils");
+
+    require(["mojo/widgets/Dialog"]);
+
+    // Leaving it globally since we used it around
+    window.rootUrl = '/';
+
+    require([
+        "dojo/query",
+    ], function (query) {
+        // captcha takes a global function to callback
+        window.captchaSuccess = function () {
+            query('[data-mc-el="captchaAutoSubmit"]')[0].submit();
+        };
+    });
+
+    require([
+        "dojo/_base/lang",
+        "mojo/user",
+        "mojo/context",
+    ], function (lang, user, context) {
+        // Add defaults to the actual modules.
+
+        lang.mixin(context, {
+            'rootUrl': '/',
+
+            'proxyBaseUrl': "https:\/\/d2q0qd5iz04n9u.cloudfront.net\/_ssl\/proxy.php",
+
+            'listManageDomain': "celbitsgoa.us20.list-manage.com",
+
+            'pusherKey': "74d7188a67461f12439a",
+
+            'cdnImagesDomain': "cdn-images.mailchimp.com",
+
+            'galleryDomain': "gallery.mailchimp.com",
+
+            'avestaEnvironment': "prod",
+
+            "imageEditorUrl": "https:\/\/dme0ih8comzn4.cloudfront.net\/imaging\/v3\/editor.js",
+
+            "imageEditorKey": "0e6dcf36c54b4faf965e45884a3dcf30",
+
+            "solvvyUrl": "\/js\/vendor\/solvvy\/solvvy_v3.js",
+
+            "enabledFlags": ["mobile.android.5.7.subscribers_new_pager","mobile.android.5.6.add_contact","mobile.iphone.5.6.explore_phase_2","mobile.android.5.6.explore_phase_2","mobile.iphone.5.5.explore_tab","mobile.android.5.5.explore_tab","mobile.android.5.5.report_detail_ecomm_fragment_mvvm","mobile.android.5.5.notification_settings_mvvm","mobile.iphone.5.5.one_list_onboarding","mobile.android.5.5.one_list_onboarding","mobile.iphone.5.5.audience_settings_update","mobile.android.5.5.audience_settings_update","mobile.iphone.5.5.audience_tab_update","mobile.android.5.5.refresh_audience_tab","mobile.android.5.5.audience_tab_update","mobile.iphone.5.6.social_reporting","mobile.android.5.6.social_reporting","compliance_cross_account_gallery_policy","compliance_mcuribl_alternate_unroller","support_ref_log","delivery_dkim_lowercase_i_tag","delivery_validate_api_test_emails","delivery.freeform_txhigh","adyen_turnoff","channels.neapolitan.drop_zone_event","channels.square.no_product_block_usage","channels.postcards_usabilla_survey","channels.twitter_verify_connection","gdpr.require_fields","automations_social_post","ignore_egp_spam_trap","zendesk_customer_tier","no_user_chat","facebook_api_upgrade","pricing_email_form","mcadmin_okta","zendesk_support_key_tag","ads_fb_retargeting","refactor_high_vol_send","api30_ecomm_patch_bulk_sql","api30_onerror_bugsnag_fix","api1x_shutdown","api1x_phpinput_shutdown","save_last_api_activity","mandrill_signup_permitted","remove_sms_verification","speed_up_ecomm_category_query","subscribe_post_throttler_logging","mcadmin_delete_store_button","save_customer_within_list_management","remove_unknown_status_types","partner_platform_api_utma","partner_platform_api_root_ping","shopify_marketing_event_outreach","shopify_marketing_event_ad","stats_social.create_temp_innodb","pylp_ad_reporting","fb_ad_gifs","campaigns_logo_merge_cache","memcached_client_timeout","fb_pixel_creation","facebook.ads.publishing_enabled","retry_login_cacheclient","nd.circuit_breaker.wind_down","mailchimp_presents_newsletter_welcome_wizard","nd.shopsync.show","nd.shopsync.update_source","sites.tos_feature_pauses","eventbrite_affiliate_links","ecommerce_transactional_opt_in","enable_pfree_chat_support","gpaid.usabilla_survey_cookie","segmentation_feature_parity_batch1","new_productrec_getforeignids","paypal_slab_removal","ga_reports_fix","sql_context_injection","landing_pages.billing_editor","adyen_client_guzzle","dkim_options","payments.feature_tiering","revenue.retier_notification","revenue.sign_up_as_package_user","revenue.net_new_free_on_whole_audience_count","payments.prevent_duplicate_package_orders","gdpr.link_tracking","autoloader_spy_enabled","remove_login_flashblock","front_end_rum","mc.lock_waited","billing_replace_deprecated","text_filter_html_removal","partner_exp.video","get_content_from_url_guzzle","mcmta_client_guzzle","security.login_cookie_test_removal","no_reply_billing","gpaid.post_import_banner_audience_size","is_pro_caching","automation_remove_unused_index_code"],
+
+            "bridgeBundles": {"vendor.js":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/vendor.286b445e.js","vendor.js.map":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/vendor.286b445e.js.map","social-posts.css":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/social-posts.69969f73.css","social-posts.js":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/social-posts.69969f73.js","social-posts.css.map":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/social-posts.69969f73.css.map","social-posts.js.map":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/social-posts.69969f73.js.map","paywall.js":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/paywall.69969f73.js","paywall.js.map":"\/release\/1.1.1741dcfc136dce737201b463302b694b6d12d2d35\/js-src\/paywall.69969f73.js.map"},
+        });
+
+                lang.mixin(user, {
+            '__csrfToken': "36a13a01e8dcdcb1605204e2164b15050652f136",
+
+            'role': "owner",
+
+            'type': "Free Trial",
+
+            'userId': 117858286,
+
+            'loginId': 126887258,
+
+            'email': "saumi10600@gmail.com",
+
+            'settings': {
+                'pageSize': "10",
+                'fileManagerShowGrid': true            },
+
+                            'avatarUrl': "https:\/\/gallery.mailchimp.com\/c0caec37025f59c8c463cc732\/avatar\/logo.jpeg",
+            
+            'pro': false,
+
+            'pro_import_complete': false,
+
+            'flags': ["mobile.android.5.7.subscribers_new_pager","mobile.android.5.6.add_contact","mobile.iphone.5.6.explore_phase_2","mobile.android.5.6.explore_phase_2","mobile.iphone.5.5.explore_tab","mobile.android.5.5.explore_tab","mobile.android.5.5.report_detail_ecomm_fragment_mvvm","mobile.android.5.5.notification_settings_mvvm","mobile.iphone.5.5.one_list_onboarding","mobile.android.5.5.one_list_onboarding","mobile.iphone.5.5.audience_settings_update","mobile.android.5.5.audience_settings_update","mobile.iphone.5.5.audience_tab_update","mobile.android.5.5.refresh_audience_tab","mobile.android.5.5.audience_tab_update","mobile.iphone.5.6.social_reporting","mobile.android.5.6.social_reporting","compliance_cross_account_gallery_policy","compliance_mcuribl_alternate_unroller","support_ref_log","delivery_dkim_lowercase_i_tag","delivery_validate_api_test_emails","delivery.freeform_txhigh","adyen_turnoff","channels.neapolitan.drop_zone_event","channels.square.no_product_block_usage","channels.postcards_usabilla_survey","channels.twitter_verify_connection","gdpr.require_fields","automations_social_post","ignore_egp_spam_trap","zendesk_customer_tier","no_user_chat","facebook_api_upgrade","pricing_email_form","mcadmin_okta","zendesk_support_key_tag","ads_fb_retargeting","validate_login_user_by_username","refactor_high_vol_send","api30_ecomm_patch_bulk_sql","api30_onerror_bugsnag_fix","api1x_shutdown","api1x_phpinput_shutdown","save_last_api_activity","mandrill_signup_permitted","remove_sms_verification","speed_up_ecomm_category_query","subscribe_post_throttler_logging","mcadmin_delete_store_button","save_customer_within_list_management","es_segment_test_count","remove_unknown_status_types","partner_platform_api_utma","partner_platform_api_root_ping","shopify_marketing_event_outreach","shopify_marketing_event_ad","stats_social.create_temp_innodb","pylp_ad_reporting","fb_ad_gifs","campaigns_logo_merge_cache","memcached_client_timeout","fb_pixel_creation","facebook.ads.publishing_enabled","retry_login_cacheclient","nd.circuit_breaker.wind_down","mailchimp_presents_newsletter_welcome_wizard","nd.shopsync.show","nd.shopsync.update_source","sites.tos_feature_pauses","eventbrite_affiliate_links","ecommerce_transactional_opt_in","enable_pfree_chat_support","gpaid.usabilla_survey_cookie","segmentation_feature_parity_batch1","new_productrec_getforeignids","paypal_slab_removal","ga_reports_fix","sql_context_injection","landing_pages.billing_editor","adyen_client_guzzle","dkim_options","payments.feature_tiering","revenue.retier_notification","revenue.sign_up_as_package_user","revenue.net_new_free_on_whole_audience_count","payments.prevent_duplicate_package_orders","gdpr.link_tracking","autoloader_spy_enabled","remove_login_flashblock","front_end_rum","mc.lock_waited","billing_replace_deprecated","text_filter_html_removal","partner_exp.video","get_content_from_url_guzzle","mcmta_client_guzzle","security.login_cookie_test_removal","no_reply_billing","gpaid.post_import_banner_audience_size","is_pro_caching","automation_remove_unused_index_code"] || {},
+
+            'policy': {"seat":{"max-instances":1,"category-restrictions":[{"name":"role","allowed-values":["owner"]}]},"template":{"category-restrictions":[{"name":"category","allowed-values":["basic_layouts","basic_themes"]}]},"audience":{"max-instances":1},"automation":{"category-restrictions":[{"name":"workflow","allowed-values":["abandonedBrowse","abandonedCart","categoryFollowup","custom","emailFollowup","productFollowup","purchaseFollowup","reengageSupporters","singleWelcome","sitePopupThankYou","tagAdd","groupAddSingle","groupRemoveSingle","topSupportersSingle","firstTimeCustomersSingle","bestCustomersSingle","reengageCustomersSingle","apiSingle","birthdaySingle","dateAddedSingle","recurringEventSingle","specialEventSingle","eventApi"]}]},"automation_step":{"max-instances":1},"campaign":{"category-restrictions":[{"name":"type","allowed-values":["regular","plaintext","rss","trans","auto","automation","reconfirm","tx"]}]}},
+
+            'userLevel': "free",
+
+            'isAnyEcomm': false,
+
+            'hasPaid': false,
+
+            'currencySymbol': "$",
+
+            'currencyCode': "USD",
+
+            'currencyLocale': "en-US",
+
+            'timezoneLabel': "Eastern Time",
+
+            'timezoneOffset': -4,
+
+            'hasVerifiedCustomDomain': false,
+
+            'isActivelyPaying': false,
+
+            'isActivelyPayingEachMonth': false,
+
+            'isBrandedBundleSubscriber': false,
+
+            'isCurrencySymbolBehindAmount': false,
+
+            'mustTrackLinks': true,
+
+            'isGoalAvailable': false,
+
+            'isGoalEnabled': false,
+
+            'canSend': true,
+
+            'freeLimit': 2000,
+
+            'whyNotSend': "There are some issues which might impact your ability to send.  <a class=\"nowrap\" href=\"https:\/\/us20.admin.mailchimp.com\/account#issues\">Learn more about your account status<\/a>.",
+
+            'whyNotSendTitle': "Sending Disabled",
+
+            'isPaused': false,
+
+            'sentToday': 5,
+
+            'isLimitedTrial': true,
+
+            'canSendFree': true,
+
+            'isPayAsYouGo': false,
+
+            'brandLogoUrl': "https:\/\/cdn-images.mailchimp.com\/template_images\/gallery\/logo@2x.png",
+
+            'isND': false,
+
+            'isBootstrapped': true,
+
+            'appVersion': "1.1.1741dcfc136dce737201b463302b694b6d12d2d35",
+
+            'dataExportsAllowed': true,
+
+            'websiteLogoUrl': "",
+
+        });
+        
+    });
+        require([
+        "vendor/bugsnag/bugsnag",
+        "mojo/user",
+    ], function (bugsnag, user) {
+        bugsnag.endpoint = "https:\/\/bugsnag-notify.mailchimp.com\/js";
+        bugsnag.apiKey = "29f7c1fcbc19f93274b6fae7d4ab0aa1";
+        bugsnag.autoNotify = true;
+        bugsnag.user = {
+            id: user.userId,
+            type: user.type,
+        };
+        bugsnag.appVersion = user.appVersion;
+        /*
+        [FP-157]: This field is for FP team to identify errors that
+        get triggered from webpack-built dojo bundles.
+        beforeNotify is a field that applies to the older version of
+        bugsnag that we currently use for dojo code. For newer version,
+        use `beforeSend`.
+        */
+        bugsnag.beforeNotify = function(payload) {
+            if (/js-legacy/.test(payload.stacktrace)) {
+                /* we currently have a device field in metaData
+                so we would not want to override it */
+                if (payload.metaData) {
+                    payload.metaData.bundle = 'webpack'
+                } else {
+                    payload.metaData = {
+                        bundle: 'webpack',
+                    };
+                }
+            }
+        };
+    });
+
+    require([
+        "dojo/Deferred",
+        "vendor/bugsnag/bugsnag",
+    ], function (Deferred, bugsnag) {
+        Deferred.instrumentRejected = function (error, handled, rejection, deferred) {
+            if (handled === true) {
+                return;
+            }
+
+            if (typeof error === "string") {
+                bugsnag.notify(error);
+            } else if (error instanceof Error) {
+                bugsnag.notifyException(error);
+            } else {
+                bugsnag.notify("UnhandledDeferredRejection", error);
+            }
+        };
+    });
+    </script><script type="text/javascript">
+    require(["mojo/rum"], function (rum) {
+        rum("hmac.766e1934b2376f37bcae113e38d96b33f3512b1e8adf2520773c7c8aaca24654.content-index")
+    });
+</script><script type="text/javascript">
+    require([
+        "mojo/widgets/Notifications",
+        "mojo/keep-alive"
+    ]);
+</script><script type="text/javascript" src="./Content _ Mailchimp_files/swfobject.js.download"></script><script type="text/javascript">
+        require([
+            "dojo/query",
+            "dojo/dom-class",
+            "dojo/_base/xhr",
+            "dojo/window",
+
+            // custom libs which perform work on dom ready
+            "mojo/touch/no-delay",
+            "mojo/app/common/sticky-hoverlist",
+            "dojo/domReady!"
+        ], function(query, domClass, xhr, win){
+        });
+
+    </script><script type="text/javascript">
+    var reauth = {
+        url: '/login/reauthenticate?username=cel_bitsgoa&user_id=117858286',
+        rememberMe : false    };
+
+    dojo.require('mojo.ReauthDialog');
+
+    // Override dojo's xhr to handle 403 status
+    (function(){
+        var oldXHR = dojo.xhr;
+        dojo.xhr = function() {
+            return oldXHR.apply(dojo, arguments).addErrback(function(err) {
+                switch(err.xhr.status) {
+                    case 403:
+                        window.top.mojo.ReauthDialog.show();
+                        break;
+                }
+            });
+        };
+    })();
+</script><script type="text/javascript">
+    // Handle 403 errors when making ajax calls through dojo/request which is the newer module.
+    require([
+        "dojo/request",
+        "dojo/request/notify"
+    ], function(request, notify) {
+        notify("error", function( error ) {
+            switch(error.response.status) {
+                case 403:
+                    window.top.mojo.ReauthDialog.show();
+                    break;
+            }
+        });
+    });
+</script><script type="text/javascript">
+    (function () {
+        function getCookie(check_name) {
+            var a_all_cookies = document.cookie.split(';');
+            var a_temp_cookie = '';
+            var cookie_name = '';
+            var cookie_value = '';
+            var b_cookie_found = false;
+
+            for (i = 0; i < a_all_cookies.length; i++) {
+                a_temp_cookie = a_all_cookies[i].split('=');
+                cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+                if (cookie_name === check_name) {
+                    b_cookie_found = true;
+                    if (a_temp_cookie.length > 1) {
+                        cookie_value = unescape(a_temp_cookie[1].replace(/^\s+|\s+$/g, ''));
+                    }
+                    return cookie_value;
+                }
+                a_temp_cookie = null;
+                cookie_name = '';
+            }
+
+            if (!b_cookie_found) {
+                return null;
+            }
+        }
+        // Save tracking id and client id to a cookie so we can use them server side
+        setTimeout(function () {
+            if (!getCookie('_mcga')) {
+                ga(function (tracker) {
+                    var gaData = {
+                        tid: tracker.get('trackingId'),
+                        cid: tracker.get('clientId')
+                    };
+                    document.cookie = '_mcga=' + JSON.stringify(gaData) + ';path=/;domain=.mailchimp.com';
+                });
+            }
+        }, 1);
+    })();
+</script><script type="text/javascript">require(['mojo/views/content/index'], function(Module) {
+                    window._mc = new Module({"company_name":"Center for Entrepreneurial and Leadership, BITS Goa","company_website":"www.celbitsgoa.in"});
+                    window._mc.run();
+                });</script><script type="text/javascript">
+        require([
+            "mojo/views/index/PersistentUpgradeButton"
+        ], function(persistentUpgradeButton) {
+            persistentUpgradeButton("[data-mc-el='launchTopNavigationUBE']",
+                { location: 'persistent_upgrade_navbar', upgrade_reason: 'persistent_upgrade', button_text: 'upgrade_now' });
+        });
+    </script><script type="text/javascript">
+    require([
+        "mojo/views/index/PersistentUpgradeButton"
+    ], function(persistentUpgradeButton) {
+        persistentUpgradeButton("[data-mc-el='launchAccountNavUBE']",
+            { location: 'persistent_upgrade_account_dropdown', upgrade_reason: 'persistent_upgrade', button_text: 'upgrade_now' });
+    });
+</script><script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<img width="1" height="1" border="0" src="https://d.agkn.com/pixel/7902/?che=' + a + '&type=GS62"/>');
+</script><img width="1" height="1" border="0" src="./Content _ Mailchimp_files/saved_resource"><script type="text/javascript">
+    require([
+        "dojo/dom-attr",
+        "dojo/_base/window",
+        "dojo/domReady!"
+    ], function(domAttr, win){
+        domAttr.set(win.doc.documentElement, "lang", "en");
+    });
+</script> <div class="dijitToasterClip" dojoattachpoint="clipNode" lang="en" id="toast" style="display: none;" widgetid="toast"><div class="dijitToasterContainer" dojoattachpoint="containerNode" dojoattachevent="onclick:onSelect" style="opacity: 1;"><div class="dijitToasterContent" dojoattachpoint="contentNode"></div></div></div><div class="dijitDialog" role="dialog" aria-labelledby="popup-win-blocked_title" lang="en" id="popup-win-blocked" style="display: none; position: absolute;" widgetid="popup-win-blocked">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="popup-win-blocked_title" role="heading" level="1">Pop-up Windows Are Blocked</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent"> <div class="dijitDialogPaneContentArea"> <p>Looks like your browser is blocking pop-up windows.<br>Learn how to <a href="https://mailchimp.com/help/enable-pop-ups-in-your-browser/" class="info" target="_blank" rel="noopener noreferrer">enable them</a>.</p> </div> <div class="dijitDialogPaneActionBar"> <a href="https://us20.admin.mailchimp.com/content/#" class="button p0" onclick="dijit.byId(&#39;popup-win-blocked&#39;).hide(); return false;" role="button">Close</a> </div> </div>
+	
+</div><div class="dijitPopup" role="region" aria-label="dijit_DropDownMenu_0" style="display: none; height: auto; overflow: hidden;"><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" cellspacing="0" id="dijit_DropDownMenu_0" widgetid="dijit_DropDownMenu_0" style="top: 0px;">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+                                        <tr class="dijitReset dijitMenuItem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" aria-label="Import from URL " id="dijit_MenuItem_0" widgetid="dijit_MenuItem_0" style="user-select: none;">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" role="presentation" id="dijit_MenuItem_0_text">Import from URL</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_MenuItem_0_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+                                    </tbody>
+</table></div><div class="dijitPopup" role="region" aria-label="dijit_DropDownMenu_1" style="display: none; height: auto; overflow: hidden;"><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable" role="menu" tabindex="0" cellspacing="0" id="dijit_DropDownMenu_1" widgetid="dijit_DropDownMenu_1" style="top: 0px;">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+                                            <tr class="dijitReset dijitMenuItem display--none@tablet hide" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" aria-label="Edit Image " id="dijit_MenuItem_1" widgetid="dijit_MenuItem_1" style="user-select: none;">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" role="presentation" id="dijit_MenuItem_1_text">Edit Image</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_MenuItem_1_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+                                            <tr class="dijitReset dijitMenuItem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" aria-label="Copy URL " id="dijit_MenuItem_2" widgetid="dijit_MenuItem_2" style="user-select: none;">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" role="presentation" id="dijit_MenuItem_2_text">Copy URL</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_MenuItem_2_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+                                            <tr class="dijitReset dijitMenuItem hide" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" aria-label="Set My Logo " id="dijit_MenuItem_3" widgetid="dijit_MenuItem_3" style="user-select: none;">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" role="presentation" id="dijit_MenuItem_3_text">Set My Logo</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_MenuItem_3_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+                                        </tbody>
+</table></div><div class="c-topSliderPane position--fixed top-bottom--0 left-right--0 bg-white overflow--hidden filemanager-container" style="display: block; z-index: 95; opacity: 1;" id="uniqName_13_0" widgetid="uniqName_13_0">
+    <div class="full-width textcolor zin-lv2 position--absolute top--0 selfclear">
+
+        <div class="c-topSliderPaneContainer">
+            <div class="c-fileMgrSidebarContainer display--none@xlphone">
+                <p class="margin-bottom--lv0 padding--lv3 small-meta font-weight--bold">Content Studio</p>
+            </div>
+            <div class="flex topBarCloseMobile">
+                <ul class="linear-list small-meta selfclear" data-dojo-attach-point="topBarActions">
+                    <li class="hover-item noborder">
+                        <a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="closeLinkMobile" class="c-wizardLink--overlay nolink padding--lv3">
+                            <span class="freddicon cross"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex--1 position--relative">
+                <div class="line full-width">
+                    <div class="unit size1of2 padding--lv3">
+                        <div class="full-width flex">
+                            <form action="https://us20.admin.mailchimp.com/content/" data-dojo-attach-point="contentSearchForm">
+                                <div id="dijit__Templated_0" class="flex--1" widgetid="dijit__Templated_0" style="">
+    <div class="size1of1 lastUnit !padding--lv0">
+        <div class="relative form-inline with-button">
+            <input data-dojo-attach-point="search" type="search" name="search" placeholder="Search files" class="!margin--lv0">
+            <!-- when not using freddicon, remove aria-label, remove the span and replace with button text -->
+            <a class="button-small" aria-label="Search button" data-dojo-attach-point="submit"><span class="freddicon search !margin--lv0" role="presentation"></span></a>
+        </div>
+    </div>
+</div>
+                            </form>
+                            <button class="button p0 show-phone margin--lv2 margin-top-bottom--lv0 margin-right--lv0" data-dojo-attach-point="uploadButtonMobile">Upload</button>
+                        </div>
+                    </div>
+
+                    <div class="lastUnit size1of2 padding--lv0">
+                        <div class="float--right">
+                            <div class="float--left padding--lv3 padding-left-right--lv0 display--none@phone">
+                                <table class="dijit dijitReset dijitInline dijitLeft dijitComboButton button p0" cellspacing="0" cellpadding="0" role="presentation" id="dijit_form_ComboButton_0" widgetid="dijit_form_ComboButton_0"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitStretch dijitButtonNode" data-dojo-attach-point="buttonNode" data-dojo-attach-event="ondijitclick:_onClick,onkeydown:_onButtonKeyDown"><div id="dijit_form_ComboButton_0_button" class="dijitReset dijitButtonContents" data-dojo-attach-point="titleNode" role="button" aria-labelledby="dijit_form_ComboButton_0_label" tabindex="0"><div class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode" role="presentation"></div><div class="dijitReset dijitInline dijitButtonText" id="dijit_form_ComboButton_0_label" data-dojo-attach-point="containerNode" role="presentation"><a href="https://us20.admin.mailchimp.com/content/#">Upload</a></div></div></td><td id="dijit_form_ComboButton_0_arrow" class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" data-dojo-attach-point="_popupStateNode,focusNode,_buttonNode" data-dojo-attach-event="onkeydown:_onArrowKeyDown" title="" role="button" aria-haspopup="true" tabindex="0" style="user-select: none;"><div class="dijitReset dijitArrowButtonInner" role="presentation"></div><div class="dijitReset dijitArrowButtonChar" role="presentation">▼</div></td><td style="display:none !important;"><input type="button" value="" data-dojo-attach-point="valueNode" class="dijitOffScreen" role="presentation" aria-hidden="true" data-dojo-attach-event="onclick:_onClick"></td></tr></tbody></table>
+                                <button class="button p0 hide hide-phone" data-dojo-attach-point="sawaButton">Create Branded Images</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-dojo-type="mojo/analytics/parts/SelectPane" data-dojo-props="target: &#39;files-list&#39;" class="position--absolute zin-lv2 top-bottom--0 left-right--0 bg-white" id="uniqName_2_0" widgetid="uniqName_2_0" style="display: none; opacity: 0;">
+                    <div class="padding--lv3 padding-right--lv0">
+                        <div class="float--left display--none@tablet">
+                            <div class="flex align-items--center hide-phone" id="dijit__Templated_1" widgetid="dijit__Templated_1" style="">
+    <p class="small-meta font-weight--bold margin--lv3 margin-top-bottom--lv0 margin-left--lv0 hide-mobile">
+        <span data-dojo-attach-point="desktopLabel">0 items</span> selected
+    </p>
+    <button data-dojo-attach-point="deselectBtn">
+        <span class="hide-mobile">Deselect All</span>
+        <span class="show-mobile">
+            Deselect <span data-dojo-attach-point="mobileLabel">0 items</span>
+        </span>
+    </button>
+</div>
+                        </div>
+
+                        <div class="float--right" data-dojo-attach-point="actionPane">
+                            <div class="flex justify-content--flex-end">
+                                <div class="cross-browser-flex--1">
+                                    <table class="dijit dijitReset dijitInline dijitLeft dijitComboButton button disabled" cellspacing="0" cellpadding="0" role="presentation" id="viewDetailsButton" widgetid="viewDetailsButton"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitStretch dijitButtonNode" data-dojo-attach-point="buttonNode" data-dojo-attach-event="ondijitclick:_onClick,onkeydown:_onButtonKeyDown"><div id="viewDetailsButton_button" class="dijitReset dijitButtonContents" data-dojo-attach-point="titleNode" role="button" aria-labelledby="viewDetailsButton_label" tabindex="0"><div class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode" role="presentation"></div><div class="dijitReset dijitInline dijitButtonText" id="viewDetailsButton_label" data-dojo-attach-point="containerNode" role="presentation"><a href="https://us20.admin.mailchimp.com/content/#0">View Details</a></div></div></td><td id="viewDetailsButton_arrow" class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" data-dojo-attach-point="_popupStateNode,focusNode,_buttonNode" data-dojo-attach-event="onkeydown:_onArrowKeyDown" title="" role="button" aria-haspopup="true" tabindex="0" style="user-select: none;"><div class="dijitReset dijitArrowButtonInner" role="presentation"></div><div class="dijitReset dijitArrowButtonChar" role="presentation">▼</div></td><td style="display:none !important;"><input type="button" value="" data-dojo-attach-point="valueNode" class="dijitOffScreen" role="presentation" aria-hidden="true" data-dojo-attach-event="onclick:_onClick"></td></tr></tbody></table>
+                                </div>
+                                <button class="button" type="button" data-dojo-attach-point="deleteButton">
+                                    <span class="hide-mobile">Delete</span>
+                                    <span class="show-mobile hide-desktop freddicon trash !margin--lv0"></span>
+                                </button>
+                                <div class="display--none@phone">
+                                    <div class="display--inline-block">
+                                        <div data-dojo-attach-point="moveToFolderContainer">
+                                            <div class="folders-btn" id="uniqName_2_3" widgetid="uniqName_2_3" style="">
+    <span class="dijit dijitReset dijitInline dijitDropDownButton" widgetid="dijit_form_DropDownButton_1"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" data-dojo-attach-point="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" data-dojo-attach-point="focusNode,titleNode,_arrowWrapperNode,_popupStateNode" role="button" aria-haspopup="true" aria-labelledby="dijit_form_DropDownButton_1_label" tabindex="0" id="dijit_form_DropDownButton_1" style="user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" data-dojo-attach-point="containerNode" id="dijit_form_DropDownButton_1_label">Move To</span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" data-dojo-attach-event="onclick:_onClick" data-dojo-attach-point="valueNode" role="presentation" aria-hidden="true"></span>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button p1 hide" data-dojo-attach-point="insertButton" disabled="disabled">Insert</button>
+                                <button class="button p1 hide" data-dojo-attach-point="selectItemButton" disabled="disabled">Insert</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex topBarClose">
+                <ul class="linear-list small-meta selfclear" data-dojo-attach-point="topBarActions">
+                    <li class="hover-item noborder">
+                        <a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="closeLink" class="c-wizardLink--overlay nolink padding--lv3">
+                            <span class="freddicon cross"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-dojo-attach-point="content" class="c-topSliderPane_content position--absolute left-right--0 bottom--0 full-width" style="opacity: 1;"><div data-dojo-attach-point="dropTarget" class="file-drop-target position--absolute bg-white full-height full-width">
+    <div class="dead-center text-align--center position--absolute">
+        <img class="margin--lv2" src="./Content _ Mailchimp_files/file-manager-add.svg" height="90">
+        <p>You can also drop files on this window to upload</p>
+    </div>
+</div>
+
+<div data-dojo-attach-point="feedbackContainerNode"></div>
+<div class="flex">
+    <div class="flex flex-col c-fileMgrSidebarContainer padding--lv2 padding-top-bottom--lv0 display--none@tablet">
+        <div class="full-width padding--lv3 padding-left-right--lv0" data-dojo-attach-point="sourceButtons"><ul id="dijit__TemplatedMixin_0" widgetid="dijit__TemplatedMixin_0"><li class="c-buttonGroupItem">
+    <button class="c-buttonGroupButton v-buttonGroupList v-buttonGroupList--animColor full-width text-align--left normal-meta height-inherit border-radius--lv1 padding--lv2 v-buttonGroupList--active" data-mc-value="file" title="My Files">
+        <div class="c-media">
+            <div class="c-mediaImage v-imageThumb--animGrayscale">
+                <img src="./Content _ Mailchimp_files/source-icon-file.svg" alt="My Files icon" class="v-contentSourceBtnImg">
+            </div>
+            <div class="c-mediaBody--centered small-meta">My Files <span data-mc-el="fileBetaMarker" class="badge new hide">Beta</span></div>
+        </div>
+    </button>
+</li>
+<li class="c-buttonGroupItem">
+    <button class="c-buttonGroupButton v-buttonGroupList v-buttonGroupList--animColor full-width text-align--left normal-meta height-inherit border-radius--lv1 padding--lv2" data-mc-value="product" title="Products">
+        <div class="c-media">
+            <div class="c-mediaImage v-imageThumb--animGrayscale">
+                <img src="./Content _ Mailchimp_files/source-icon-product.svg" alt="Products icon" class="v-contentSourceBtnImg">
+            </div>
+            <div class="c-mediaBody--centered small-meta">Products <span data-mc-el="productBetaMarker" class="badge new hide">Beta</span></div>
+        </div>
+    </button>
+</li>
+<li class="c-buttonGroupItem">
+    <button class="c-buttonGroupButton v-buttonGroupList v-buttonGroupList--animColor full-width text-align--left normal-meta height-inherit border-radius--lv1 padding--lv2" data-mc-value="giphy" title="Giphy">
+        <div class="c-media">
+            <div class="c-mediaImage v-imageThumb--animGrayscale">
+                <img src="./Content _ Mailchimp_files/source-icon-giphy.svg" alt="Giphy icon" class="v-contentSourceBtnImg">
+            </div>
+            <div class="c-mediaBody--centered small-meta">Giphy <span data-mc-el="giphyBetaMarker" class="badge new hide">Beta</span></div>
+        </div>
+    </button>
+</li>
+<li class="c-buttonGroupItem">
+    <button class="c-buttonGroupButton v-buttonGroupList v-buttonGroupList--animColor full-width text-align--left normal-meta height-inherit border-radius--lv1 padding--lv2" data-mc-value="instagram" title="Instagram">
+        <div class="c-media">
+            <div class="c-mediaImage v-imageThumb--animGrayscale">
+                <img src="./Content _ Mailchimp_files/source-icon-instagram.svg" alt="Instagram icon" class="v-contentSourceBtnImg">
+            </div>
+            <div class="c-mediaBody--centered small-meta">Instagram <span data-mc-el="instagramBetaMarker" class="badge new hide">Beta</span></div>
+        </div>
+    </button>
+</li>
+<li class="c-buttonGroupItem">
+    <button class="c-buttonGroupButton v-buttonGroupList v-buttonGroupList--animColor full-width text-align--left normal-meta height-inherit border-radius--lv1 padding--lv2" data-mc-value="brand" title="My Logo">
+        <div class="c-media">
+            <div class="c-mediaImage v-imageThumb--animGrayscale">
+                <img src="./Content _ Mailchimp_files/source-icon-brand.svg" alt="My Logo icon" class="v-contentSourceBtnImg">
+            </div>
+            <div class="c-mediaBody--centered small-meta">My Logo <span data-mc-el="brandBetaMarker" class="badge new hide">Beta</span></div>
+        </div>
+    </button>
+</li>
+</ul></div>
+    </div>
+
+    <div class="flex flex-col flex--1">
+        <div data-dojo-attach-point="listControls">
+            <div class="line padding--lv3 padding-left-right--lv0 padding-bottom--lv0">
+                <div class="lastUnit size1of1 action-bar">
+                    <div class="flex justify-content--space-between flex-direction--column@phone" data-dojo-attach-point="filtersSortsContentControls">
+                        <!--Flex Item-->
+                        <div class="">
+                            <div data-dojo-attach-point="filterFolderButtons"><div class="show-mobile width--100@phone display--inline-block margin-right--lv3 margin-right--lv0@phone"><table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitValidationTextBox dijitDownArrowButton !margin--lv0" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_1" widgetid="dijit_form_Select_1" aria-expanded="false" style="user-select: none;"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitButtonContents overflow--hidden white-space--normal" role="presentation"><div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">My Files</span></div><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" data-dojo-attach-point="valueNode" value="file" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation"><input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td></tr></tbody></table></div>
+                                <div class="width--100@phone display--inline-block margin-right--lv3 margin-right--lv0@phone" data-dojo-attach-point="filterButton"><div id="dijit__Templated_5" widgetid="dijit__Templated_5" style="">
+    <span class="dijit dijitReset dijitInline dijitDropDownButton" widgetid="dijit_form_DropDownButton_2"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" data-dojo-attach-point="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" data-dojo-attach-point="focusNode,titleNode,_arrowWrapperNode,_popupStateNode" role="button" aria-haspopup="true" aria-labelledby="dijit_form_DropDownButton_2_label" tabindex="0" id="dijit_form_DropDownButton_2" style="user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" data-dojo-attach-point="containerNode" id="dijit_form_DropDownButton_2_label">Filter</span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" data-dojo-attach-event="onclick:_onClick" data-dojo-attach-point="valueNode" role="presentation" aria-hidden="true"></span>
+</div></div>
+                                <div class="width--100@phone display--inline-block" data-dojo-attach-point="folderButton"><div class="folders-btn !width--100@phone" id="uniqName_2_2" widgetid="uniqName_2_2" style="">
+    <span class="dijit dijitReset dijitInline dijitDropDownButton" widgetid="dijit_form_DropDownButton_0"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" data-dojo-attach-point="_buttonNode"><span class="dijitReset dijitStretch dijitButtonContents dijitDownArrowButton" data-dojo-attach-point="focusNode,titleNode,_arrowWrapperNode,_popupStateNode" role="button" aria-haspopup="true" aria-labelledby="dijit_form_DropDownButton_0_label" tabindex="0" id="dijit_form_DropDownButton_0" popupactive="true" aria-expanded="false" aria-owns="dijit_TooltipDialog_0" style="user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitInline dijitButtonText" data-dojo-attach-point="containerNode" id="dijit_form_DropDownButton_0_label">Folders</span><span class="dijitReset dijitInline dijitArrowButtonInner"></span><span class="dijitReset dijitInline dijitArrowButtonChar">▼</span></span></span><input type="button" value="" class="dijitOffScreen" tabindex="-1" data-dojo-attach-event="onclick:_onClick" data-dojo-attach-point="valueNode" role="presentation" aria-hidden="true"></span>
+</div></div>
+                                <div class="width--100@phone display--inline-block hide" data-dojo-attach-point="accountSelector"><!--Filled via JS--></div>
+                            </div>
+                        </div>
+                        <!--Flex Item-->
+                        <div class="flew-row flex-direction--column@phone">
+                            <div class="margin-bottom--lv1 sort-selector display--inline-block vertical-align--top" data-dojo-attach-point="sortButton"><div class="inline-block valign-top" style="" id="dijit__Templated_7" widgetid="dijit__Templated_7">
+    <span class="sort-selector-label small-meta fwb valign-middle margin--lv1 !margin-top-bottom--lv0 !margin-left--lv0 hide-mobile">Sort by</span>
+    <table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitValidationTextBox dijitDownArrowButton" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_4" widgetid="dijit_form_Select_4" aria-expanded="false" aria-invalid="false" style="user-select: none;"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitButtonContents overflow--hidden white-space--normal" role="presentation"><div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">Newest First</span></div><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" data-dojo-attach-point="valueNode" value="created_at-desc" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation"><input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td></tr></tbody></table>
+</div></div>
+                            <div id="uniqName_20_0" class="display--inline-block" widgetid="uniqName_20_0" style="">
+    <ul class="flex">
+        <li class="c-buttonGroupItem">
+            <button type="button" data-dojo-attach-point="grid" class="c-buttonGroupButton v-buttonGroupBordered" title="Toggle grid view">
+                    <span class="freddicon grid-view inline-block !margin-right--lv0"></span>
+            </button>
+        </li>
+        <li class="c-buttonGroupItem">
+            <button type="button" data-dojo-attach-point="list" class="c-buttonGroupButton v-buttonGroupBordered" title="Toggle list view">
+                    <span class="freddicon list-view inline-block !margin-right--lv0"></span>
+            </button>
+        </li>
+    </ul>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="lastUnit size1of1 margin-bottom--lv3" data-dojo-attach-point="filterMessage"><div class="feedback-block info margin--lv3 !margin-left-right--lv0 !margin-bottom--lv0" id="dijit__Templated_6" widgetid="dijit__Templated_6" style="display: none;">
+    <div class="lastUnit size1of1">
+        <div class="c-media">
+            <div class="c-mediaImage v-isFreddicon">
+                <a href="https://us20.admin.mailchimp.com/content/#" class="dim-el" data-dojo-attach-point="resetFilter"><span class="freddicon cross-fill"></span></a>
+            </div>
+            <div class="c-mediaBody--centered">
+                <p data-dojo-attach-point="message"></p>
+            </div>
+        </div>
+    </div>
+</div></div>
+                <div class="lastUnit size1of1 margin-bottom--lv3 c-contextMessage" data-dojo-attach-point="contextMessageNode"></div>
+            </div>
+        </div>
+
+        <!--  files list -->
+        <div class="overflow--auto padding--lv3 padding-top-bottom--lv0" data-dojo-attach-point="listContainer" id="list-container" style="height: 251px;">
+            <div class="lastGroup size1of1">
+
+                <div data-dojo-attach-point="filesListContainer" class="v-gridView--active">
+                    <ul class="flex flex-row" data-dojo-attach-point="fileList" data-dojo-type="mojo/widgets/content-manager/ContentList" id="files-list" data-dojo-props="&#39;lazy&#39;: true, url:&#39;/content&#39;, sort: &#39;created_at-desc&#39;" widgetid="files-list"><li class="c-fileItem" id="dijit__WidgetsInTemplateMixin_1" widgetid="dijit__WidgetsInTemplateMixin_1">
+    <label data-dojo-attach-point="itemLabel" class="c-fileItem_label padding--lv0 position--relative full-width full-height">
+        <!-- Checkbox -->
+        <div class="dijit dijitReset dijitInline u-hide@GridActive position--absolute top-0 left-right--0 margin--lv3 dijitCheckBox selectCheckBox" role="presentation" widgetid="dijit_form_CheckBox_0"><input type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_CheckBox_0" value="345273" style="user-select: none;"></div>
+
+        <!-- Grid view -->
+        <div data-dojo-attach-point="gridImage" class="c-fileGridItem u-hide@listActive c-fileTypeIcons--large full-height">
+            <div class="c-fauxCheckmark c-fauxCheckmark--checked c-fileGridItemCheckmark position--absolute top-0 left-right--0 margin--lv2"></div>
+            <div class="c-fileGridItemImage full-height flex flex-direction--column justify-content--center align-items--center">
+                <div class="flex-shrink--0 full-width text-align--center">
+                    <img src="./Content _ Mailchimp_files/e7dcfb6c-5dd3-41ed-bd5b-2a6d068caaac.jpeg" alt="WhatsApp Image 2019-06-02 at 3.04.35 AM.jpeg" data-dojo-attach-point="gridImageNode" class="c-fileGridItemImage_img">
+                </div>
+                <div class="position--absolute top-bottom--0 left-right--0 c-fileTypeIcons_icon image"></div>
+                <div data-dojo-attach-point="overlay" class="position--absolute top-bottom--0 left-right--0 c-fileGridItemImage_overlay bg-white"></div>
+                <div data-dojo-attach-point="disabledOverlay" class="position--absolute top-bottom--0 left-right--0 c-fileGridItemImage_overlay_disabled hide">
+                    <span data-dojo-attach-point="disabledReasonGridBadge" class="badge v-disabledBadgeBackground"></span>
+                </div>
+            </div>
+            <span data-dojo-attach-point="gridBadge" class="badge v-textColorWhite v-versionsBadgeBackground position--absolute bottom--0 right--0 margin--lv2 hide">1</span>
+        </div>
+
+        <!-- List view -->
+        <div class="u-hide@GridActive v-buttonGroupMenuItem border-radius--lv2 padding--lv2 c-fileTypeIcons--small">
+            <div class="c-media margin--lv8 margin-top-bottom--lv0 margin-right--lv0 padding--lv2 padding-top-bottom--lv0 padding-left-right--lv0">
+                <div class="c-mediaImage position--relative">
+                    <div class="c-listViewImgThumbnail v-bg-gray-lightest border-gray position--relative">
+                        <div data-dojo-attach-point="listImageNode" class="position--absolute top-bottom--0 left-right--0 v-containedBackgroundImage" style="background-image: url(https://gallery.mailchimp.com/c0caec37025f59c8c463cc732/_thumbs/e7dcfb6c-5dd3-41ed-bd5b-2a6d068caaac.jpeg);"></div>
+                        <div class="position--absolute top-bottom--0 left-right--0 c-fileTypeIcons_icon image"></div>
+                    </div>
+                    <span data-dojo-attach-point="listBadge" class="badge c-listViewVersionBadge v-textColorWhite v-versionsBadgeBackground position--absolute bottom--0 right--0 hide">1</span>
+                </div>
+                <div class="c-mediaBody--centered">
+                    <p class="margin-bottom--lv0 small-meta word-wrap--break-all">WhatsApp Image 2019-06-02 at 3.04.35 AM.jpeg</p>
+                    <p class="margin-bottom--lv0 font-weight--normal small-meta">Jun 2, 2019, 3:06 AM · 1176 × 616 px · 64 Kb · Saumya Bhatt</p>
+                </div>
+                <span data-dojo-attach-point="disabledReasonListBadge" class="hide badge v-disabledBadgeBackground"></span>
+            </div>
+        </div>
+    </label>
+</li><li class="c-fileItem" id="dijit__WidgetsInTemplateMixin_2" widgetid="dijit__WidgetsInTemplateMixin_2">
+    <label data-dojo-attach-point="itemLabel" class="c-fileItem_label padding--lv0 position--relative full-width full-height">
+        <!-- Checkbox -->
+        <div class="dijit dijitReset dijitInline dijitCheckBox selectCheckBox u-hide@GridActive position--absolute top-0 left-right--0 margin--lv3" role="presentation" widgetid="dijit_form_CheckBox_1"><input type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" id="dijit_form_CheckBox_1" value="345269" style="user-select: none;"></div>
+
+        <!-- Grid view -->
+        <div data-dojo-attach-point="gridImage" class="c-fileGridItem u-hide@listActive c-fileTypeIcons--large full-height">
+            <div class="c-fauxCheckmark c-fauxCheckmark--checked c-fileGridItemCheckmark position--absolute top-0 left-right--0 margin--lv2"></div>
+            <div class="c-fileGridItemImage full-height flex flex-direction--column justify-content--center align-items--center">
+                <div class="flex-shrink--0 full-width text-align--center">
+                    <img src="./Content _ Mailchimp_files/61c8e435-373e-4974-b7a2-5eaa9f9efd71.jpeg" alt="WhatsApp Image 2019-06-02 at 3.04.36 AM.jpeg" data-dojo-attach-point="gridImageNode" class="c-fileGridItemImage_img">
+                </div>
+                <div class="position--absolute top-bottom--0 left-right--0 c-fileTypeIcons_icon image"></div>
+                <div data-dojo-attach-point="overlay" class="position--absolute top-bottom--0 left-right--0 c-fileGridItemImage_overlay bg-white"></div>
+                <div data-dojo-attach-point="disabledOverlay" class="position--absolute top-bottom--0 left-right--0 c-fileGridItemImage_overlay_disabled hide">
+                    <span data-dojo-attach-point="disabledReasonGridBadge" class="badge v-disabledBadgeBackground"></span>
+                </div>
+            </div>
+            <span data-dojo-attach-point="gridBadge" class="badge v-textColorWhite v-versionsBadgeBackground position--absolute bottom--0 right--0 margin--lv2 hide">1</span>
+        </div>
+
+        <!-- List view -->
+        <div class="u-hide@GridActive v-buttonGroupMenuItem border-radius--lv2 padding--lv2 c-fileTypeIcons--small">
+            <div class="c-media margin--lv8 margin-top-bottom--lv0 margin-right--lv0 padding--lv2 padding-top-bottom--lv0 padding-left-right--lv0">
+                <div class="c-mediaImage position--relative">
+                    <div class="c-listViewImgThumbnail v-bg-gray-lightest border-gray position--relative">
+                        <div data-dojo-attach-point="listImageNode" class="position--absolute top-bottom--0 left-right--0 v-containedBackgroundImage" style="background-image: url(https://gallery.mailchimp.com/c0caec37025f59c8c463cc732/_thumbs/61c8e435-373e-4974-b7a2-5eaa9f9efd71.jpeg);"></div>
+                        <div class="position--absolute top-bottom--0 left-right--0 c-fileTypeIcons_icon image"></div>
+                    </div>
+                    <span data-dojo-attach-point="listBadge" class="badge c-listViewVersionBadge v-textColorWhite v-versionsBadgeBackground position--absolute bottom--0 right--0 hide">1</span>
+                </div>
+                <div class="c-mediaBody--centered">
+                    <p class="margin-bottom--lv0 small-meta word-wrap--break-all">WhatsApp Image 2019-06-02 at 3.04.36 AM.jpeg</p>
+                    <p class="margin-bottom--lv0 font-weight--normal small-meta">Jun 2, 2019, 3:05 AM · 779 × 277 px · 11 Kb · Saumya Bhatt</p>
+                </div>
+                <span data-dojo-attach-point="disabledReasonListBadge" class="hide badge v-disabledBadgeBackground"></span>
+            </div>
+        </div>
+    </label>
+</li></ul>
+                </div>
+            </div>
+
+
+            <!--Mobile view of select pane-->
+            <div class="show-mobile">
+                <div data-dojo-type="mojo/analytics/parts/SelectPane" data-dojo-props="target: &#39;files-list&#39;" class="position--absolute zin-lv2 bottom--0 left-right--0 bg-white border-top padding--lv3 padding-left-right--lv0" id="uniqName_2_1" widgetid="uniqName_2_1" style="display: none; opacity: 0;">
+
+                    <div class="line">
+                        <div class="lastUnit size1of2">
+                            <div class="flex align-items--center" id="dijit__Templated_2" widgetid="dijit__Templated_2" style="">
+    <p class="small-meta font-weight--bold margin--lv3 margin-top-bottom--lv0 margin-left--lv0 hide-mobile">
+        <span data-dojo-attach-point="desktopLabel">0 items</span> selected
+    </p>
+    <button data-dojo-attach-point="deselectBtn">
+        <span class="hide-mobile">Deselect All</span>
+        <span class="show-mobile">
+            Deselect <span data-dojo-attach-point="mobileLabel">0 items</span>
+        </span>
+    </button>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div data-dojo-attach-point="paginationControls" class="fm-pagination bg-white position--absolute border-top padding--lv2 !padding-left-right--lv0 flex-row">
+    <div class="unit flex-auto">
+        <div id="dijit__Templated_3" widgetid="dijit__Templated_3" style="display: none;">
+    <span class="view-label small-meta hide-phone fwb margin--lv2 !margin-top-bottom--lv0 !margin-left--lv0">View</span>
+    <table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitValidationTextBox dijitDownArrowButton !margin--lv0 select-small valign-middle" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_0" widgetid="dijit_form_Select_0" aria-expanded="false" style="user-select: none;"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitButtonContents overflow--hidden white-space--normal" role="presentation"><div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">10</span></div><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" data-dojo-attach-point="valueNode" value="10" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation"><input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td></tr></tbody></table>
+</div>
+    </div>
+
+    <div class="lastUnit paging-controls flex-auto">
+        <div class="alignr selfclear" id="dijit__Templated_4" widgetid="dijit__Templated_4" style="display: none;">
+    <div aria-label="Number of results" class="inline-block-i small-meta valign-middle padding--lv1 !padding-left-right--lv0 margin--lv2 !margin-top-bottom--lv0 !margin-left--lv0">
+        <span class="fwb"><span data-dojo-attach-point="startLabel">1</span> – <span data-dojo-attach-point="endLabel">2</span></span>
+        <span>of</span>
+        <span class="fwb" data-dojo-attach-point="totalPagesLabel">2</span>
+    </div>
+
+    <div class="float-right">
+        <button aria-label="Previous results" data-dojo-attach-point="prevButton" class="button-small freddicon menu-left padding--lv1 !padding-top-bottom--lv0" title="Previous" style="display: none;"></button>
+        <button aria-label="Next set of results" data-dojo-attach-point="nextButton" class="button-small freddicon menu-right !margin--lv0 padding--lv1 !padding-top-bottom--lv0" title="Next" style="display: none;"></button>
+    </div>
+</div>
+    </div>
+</div>
+<div class="file-upload bg-white hide fileUploader" id="UploadProgressWindow_0" widgetid="UploadProgressWindow_0">
+    <div class="header-bar selfclear padding--lv2 small-meta fwb">
+        <span data-dojo-attach-point="title">Upload Manager</span>
+        <a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="minimizeButton" style="display: none;"><span data-dojo-attach-point="minToggle" class="freddicon menu-down float-right"></span></a>
+        <a href="https://us20.admin.mailchimp.com/content/#" data-dojo-attach-point="closeButton"><span class="freddicon cross-fill float-right"></span></a>
+    </div>
+
+    <ul class="upload-list" data-dojo-attach-point="uploadList"></ul>
+</div>
+</div>
+    <form>
+        <input data-dojo-attach-point="fileBrowse" type="file" name="upload-file[]" multiple="multiple" style="display: none;">
+    </form>
+</div><div style="display: none; visibility: hidden;"><script>if("0000"!=google_tag_manager["GTM-MCZTKL"].macro(1)){var axel=Math.random()+"",a=1E13*axel;document.write('\x3cimg width\x3d"1" height\x3d"1" border\x3d"0" src\x3d"https://d.agkn.com/pixel/7902/?che\x3d'+a+"\x26type\x3d"+google_tag_manager["GTM-MCZTKL"].macro(2)+'"/\x3e')};</script></div><script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//www.google-analytics.com/analytics.js","_ga");var i,l;
+for(i=1;4>i;i++)document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a")&&(l=document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").innerText,document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").addEventListener("click",getcta(l)));
+for(i=1;3>i;i++)document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a")&&(l=document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").innerText,document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").addEventListener("click",getcta(l)));
+function getcta(a){return function(){ga("send",{hitType:"event",eventCategory:"Navigation",eventAction:"Shortcuts to Helpful Stuff",eventLabel:a})}};</script><script type="text/javascript" id="">var cat="Bing UET",act="undefined"===typeof User?"(not set)":User.userLevel;
+"object"!=typeof uetq&&function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"4058566"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)}(window,document,"script","//bat.bing.com/bat.js","uetq");window.uetq=window.uetq||[];window.uetq.push({ec:cat,ea:act});</script><div style="display: none; visibility: hidden;">
+<script>!function(b){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var a=window.pintrk;a.queue=[];a.version="3.0";a=document.createElement("script");a.async=!0;a.src=b;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}("https://s.pinimg.com/ct/core.js");pintrk("load","2613345057535",{em:"\x3cuser_email_address\x3e"});pintrk("page");</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script type="text/javascript">_linkedin_data_partner_id="78584";</script><script type="text/javascript">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","ny3f6");twq("track","PageView");</script>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1592378257726461");fbq("track","PageView");</script>
+<noscript></noscript>
+</div>
+<script type="text/javascript" id="" src="./Content _ Mailchimp_files/js"></script><meta name="google-site-verification" content="V4mQVza_GHx-KlR9WJk9sfwrPDxEyYVZ8eNj9jyAU_g"><div style="display: none; visibility: hidden;"><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://mailchimp.com",
+  "logo": "https://www.dexigner.com/images/news/xxi/31385.jpg",
+  "name": "Mailchimp"
+}
+</script></div><div style="display: none; visibility: hidden;"><script type="application/javascript">(function(d,a,b,f,e){d[e]=d[e]||[];d[e].push({projectId:"10000",properties:{pixelId:"10005633"}});var c=a.createElement(b);c.src=f;c.async=!0;c.onload=c.onreadystatechange=function(){var a=this.readyState,c=d[e];if(!a||"complete"==a||"loaded"==a)try{var b=YAHOO.ywa.I13N.fireBeacon;d[e]=[];d[e].push=function(a){b([a])};b(c)}catch(g){}};a=a.getElementsByTagName(b)[0];b=a.parentNode;b.insertBefore(c,a)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script></div><div style="display: none; visibility: hidden;">
+
+<script type="text/javascript">window.lightningjs||function(c){function a(a,d){d&&(d+=(/\?/.test(d)?"\x26":"?")+"lv\x3d1");c[a]||function(){var g=window,e=document,k=a,h=e.location.protocol,m="load",r=0;(function(){function a(){b.P(m);b.w=1;c[k]("_load")}c[k]=function(){function a(){a.id=l;return c[k].apply(a,arguments)}var l=++r;var e=this&&this!=g?this.id||0:0;(b.s=b.s||[]).push([l,e,arguments]);a.then=function(c,e,n){var d=b.fh[l]=b.fh[l]||[],k=b.eh[l]=b.eh[l]||[],f=b.ph[l]=b.ph[l]||[];c&&d.push(c);e&&k.push(e);n&&f.push(n);
+return a};return a};var b=c[k]._={};b.fh={};b.eh={};b.ph={};b.l=d?d.replace(/^\/\//,("https:"==h?h:"http:")+"//"):d;b.p={0:+new Date};b.P=function(a){b.p[a]=new Date-b.p[0]};b.w&&a();g.addEventListener?g.addEventListener(m,a,!1):g.attachEvent("on"+m,a);var t=function(){function a(){return["\x3chead\x3e\x3c/head\x3e\x3c",c,' onload\x3d"var d\x3d',q,";d.getElementsByTagName('head')[0].",h,"(d.",g,"('script')).",n,"\x3d'",b.l,"'\"\x3e\x3c/",c,"\x3e"].join("")}var c="body",d=e[c];if(!d)return setTimeout(t,
+100);b.P(1);var h="appendChild",g="createElement",n="src",m=e[g]("div"),r=m[h](e[g]("div")),f=e[g]("iframe"),q="document";m.style.display="none";d.insertBefore(m,d.firstChild).id=p+"-"+k;f.frameBorder="0";f.id=p+"-frame-"+k;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[n]="javascript:false");f.allowTransparency="true";r[h](f);try{f.contentWindow[q].open()}catch(w){b.domain=e.domain;var u="javascript:var d\x3d"+q+".open();d.domain\x3d'"+e.domain+"';";f[n]=u+"void(0);"}try{var v=f.contentWindow[q];v.write(a());
+v.close()}catch(w){f[n]=u+'d.write("'+a().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}b.P(2)};b.l&&setTimeout(t,0)})()}();c[a].lv="1";return c[a]}var p="lightningjs",h=window[p]=a(p);h.require=a;h.modules=c}({});navigator.userAgent.match(/Android|BlackBerry|BB10|iPhone|iPad|iPod|Opera Mini|IEMobile/i)?window.usabilla_live=lightningjs.require("usabilla_live","//w.usabilla.com/4357abbfab53.js"):window.usabilla_live=lightningjs.require("usabilla_live","//w.usabilla.com/9f583da56bce.js");
+window.usabilla_live("data",{custom:{UserID:google_tag_manager["GTM-MCZTKL"].macro(3)}},"setEventCallback",function(c,a,p){"Feedback:Open"===a&&(document.cookie="campaign_complete\x3d1;path\x3d/")});</script></div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.8460090161557476"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.11550262144553969" width="0" height="0" alt="" src="./Content _ Mailchimp_files/0"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.5460346568509158" width="0" height="0" alt="" src="./Content _ Mailchimp_files/0(1)"></div><script type="application/javascript" id="ywa-1561064075437-540962" class="ywa-10000" defer="" src="./Content _ Mailchimp_files/sp.pl.download"></script>
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-782980185");</script>
+<script src="./Content _ Mailchimp_files/saved_resource(1)" type="text/javascript"></script><script src="./Content _ Mailchimp_files/adsct" type="text/javascript"></script><div class="usabilla_live_button_container" tabindex="0" style="height:130px;position:fixed;z-index:999;right:0;top:50%;margin-top:-65px;width:40px" aria-label="Usabilla Feedback Button"><iframe src="./Content _ Mailchimp_files/saved_resource(2).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Usabilla Feedback Button" style="width: 40px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div><div class="dijitPopup dijitTooltipDialogPopup" role="region" aria-label="dijit_TooltipDialog_0" id="popup_1" dijitpopupparent="dijit_form_DropDownButton_0" style="visibility: visible; top: 257px; left: 355.234px; right: auto; z-index: 1000; display: none; height: auto; overflow: hidden;"><div role="alertdialog" tabindex="-1" class="dijitTooltipDialog mc-dijitMenu dijitTooltipBelow dijitTooltipABLeft" id="dijit_TooltipDialog_0" widgetid="dijit_TooltipDialog_0" aria-labelledby="dijit_form_DropDownButton_0" style="top: 0px; visibility: visible;">
+	<div class="dijitTooltipContainer" role="presentation">
+		<div data-dojo-attach-point="contentsNode" class="dijitTooltipContents dijitTooltipFocusNode">
+			<div data-dojo-attach-point="containerNode">
+            <h4 class="title show-phone alignc full-width !margin--lv0">Folders</h4>
+            <ul class="popup-list relative" data-dojo-attach-point="folderList">
+                <li style="" data-dojo-attach-point="emptyMessage" class="empty-message">You have no folders</li>
+                <li style="display:none;" data-dojo-attach-point="emptyMessageForFolder" class="empty-message">You have no other folders</li>
+                <li data-folder-id="" data-dojo-attach-point="allOption" class="selected" style="display: none;">All</li>
+            <li data-folder-id="0" class="selfclear dijitInlineEditBoxDisplayMode" role="button" tabindex="0" id="dijit_InlineEditBox_0" widgetid="dijit_InlineEditBox_0" style="display: none;"><span>Unfiled</span><div class="badge !margin--lv0 float-right folder-count">2</div><a href="javascript:void(0);" data-folder-action="remove" class="mailchimpInlineHandle freddicon remove-circle" title="Delete" style="display: none;"></a><a href="javascript:void(0);" data-folder-action="edit" class="mailchimpInlineHandle freddicon edit" title="Edit" style="display: none;"></a></li></ul>
+
+            <div class="cp-footer" data-dojo-attach-point="actionsContainer">
+                <div class="line">
+                    <div class="unit size1of2 !padding-left--lv0 nochange">
+                        <button class="button-small full-width full-height" data-dojo-attach-point="addBtn">Add Folder</button>
+                    </div>
+                    <div class="lastUnit size1of2 !padding-right--lv0 nochange">
+                        <button class="button-small full-width full-height" data-dojo-attach-point="editBtn"><span data-dojo-attach-point="editText">Edit Folder</span></button>
+                    </div>
+                    <div class="unit size1of1 !padding-left--lv0 !padding-right--lv0 nochange">
+                        <button class="button-small full-width full-height hide" data-dojo-attach-point="removeBtn">Remove From Folder</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="close-popover show-phone cursor-pointer" data-dojo-attach-point="closeFolderMenu">
+                <div class="freddicon cross-fill"></div>
+            </div>
+        </div>
+			
+		</div>
+	</div>
+	<div class="dijitTooltipConnector" role="presentation" data-dojo-attach-point="connectorNode"></div>
+</div></div></body></html>

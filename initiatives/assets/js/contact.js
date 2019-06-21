@@ -1,16 +1,15 @@
-
-// Your web app's Firebase configuration
-var firebaseConfig = {
-apiKey: "AIzaSyCFIqUsNkreAM1QPrnuAtAB59HbJADWEjM",
-authDomain: "cel-contact-us-form.firebaseapp.com",
-databaseURL: "https://cel-contact-us-form.firebaseio.com",
-projectId: "cel-contact-us-form",
-storageBucket: "cel-contact-us-form.appspot.com",
-messagingSenderId: "598134554970",
-appId: "1:598134554970:web:8cb4eff25639b8f5"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyBMgKoISM8MJdr88ARHq_KQj9w5lXwoaWk",
+    authDomain: "cel-bits-goa-contact-us-form.firebaseapp.com",
+    databaseURL: "https://cel-bits-goa-contact-us-form.firebaseio.com",
+    projectId: "cel-bits-goa-contact-us-form",
+    storageBucket: "cel-bits-goa-contact-us-form.appspot.com",
+    messagingSenderId: "550138663766",
+    appId: "1:550138663766:web:04d08e8356bc0ad4"
+  }; 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 var messageRef = firebase.database().ref('message');
 
