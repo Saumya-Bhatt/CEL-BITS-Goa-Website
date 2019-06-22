@@ -70,7 +70,7 @@ function myFunction3()
 
 function message()
 {
-    var x = document.getElementById("message");
+    var x = document.getElementById("registrations_message");
     if(x.style.display === "none")
     {
         x.style.display = "block";

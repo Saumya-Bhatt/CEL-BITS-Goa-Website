@@ -2,13 +2,26 @@
 <html lang="en">
 
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142541012-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142541012-1');
+</script>
+
   <!-- meta -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>CEL | Novatia</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="CEL Center for Entrepreneurial Learning BITS Pilani Goa Novatia" name="keywords">
+  <meta content="Novatia is the premier B-School competition organized every year by Center for Entrepreneurial
+  Learning (CEL) at BITS-Pilani, K.K Birla Goa Campus. It allows participants to sharpen their pitching and marketing 
+  skills and develop various aspects required to become a successful entrepreneur." name="description">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -26,6 +39,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="preloader/style.css">
 
   <!-- Responsive css -->
   <link href="css/responsive.css" rel="stylesheet">
@@ -36,7 +50,9 @@
 
 </head>
 
-<body>
+<body onload="functionload()">
+
+  <div id="loader"></div>
 
   <!-- start section navbar -->
   <nav id="main-nav">
@@ -391,6 +407,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="preloader/script.js"></script>
 
 </body>
 

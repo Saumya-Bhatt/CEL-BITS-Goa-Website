@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142541012-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142541012-1');
+    </script>
     
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="logo/logo.png">
@@ -10,9 +20,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>CEL</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+
+
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/gaia.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="preloader/style.css">
 
 
     <!--     Fonts and icons     -->
@@ -20,7 +34,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ccbdce44cf.js"></script>
-    
+        
     
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
@@ -28,11 +42,18 @@
 
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="description" content="Center for Entrepreneurial Leadership (CEL) is the entreprenureship division of BITS
+    -Pilani, K.K Birla Goa Campus. We aim to provide a platform to connect and inspire various budding entrepreneurs
+    and give them a platform to reach new hights.">
+    <meta name="keyword" content="CEL Center for Entrepreneurial leadership BITS Pilani Goa">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head>
 
-<body>
+<body onload="functionload()">
+
+    <div id="loader"></div>
 
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
@@ -433,7 +454,7 @@
                 <!-- Begin Mailchimp Signup Form -->
                 <div id="mc_embed_signup">
                     <!--https://gmail.us20.list-manage.com/subscribe/post?u=c0caec37025f59c8c463cc732&amp;id=9755ed7f3a-->
-                    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=c0caec37025f59c8c463cc732&amp;id=9755ed7f3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=c0caec37025f59c8c463cc732&amp;id=9755ed7f3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                         <div id="mc_embed_signup_scroll">
                             <h2></h2>
                             <input type="email" value="" name="EMAIL" class="required email sub_email" id="mce-EMAIL" placeholder="Your Email">
@@ -553,6 +574,7 @@
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
 <script src="assets/js/contact.js"></script>
+<script src="preloader/script.js"></script>
 
 <!--  js library for devices recognition -->
 <script type="text/javascript" src="assets/js/modernizr.js"></script>

@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142541012-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142541012-1');
+</script>
+
+
   <meta charset="utf-8">
   <title>CEL | Coalescence</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="CEL Center for Entrepreneurial Learning BITS Pilani Goa Coalescence" name="keywords">
+  <meta content="Coalescence is the flagship event organized by Center for Entrepreneurial Learning (CEL) BITS-Pilani, K.K Birla
+  Goa Campus. It aims to connect budding entrepreneur with industry wide professionals, organise
+  various talks and events and gives a chance to onself to discover the entrepreneur within." name="description">
 
   <!-- Favicons -->
   <link sizes="96x96" href="images/logo.png" rel="icon">
@@ -35,11 +49,14 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="preloader/style.css">
 
 
 </head>
 
-<body>
+<body onload="functionload()">
+
+  <div id="loader"></div>
 
   <!--==========================
     Header
@@ -82,7 +99,7 @@
   <section id="intro">
     <div class="intro-container">
       <!--<div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">-->
-
+ 
         <!--<ol class="carousel-indicators"></ol>-->
         <!--img/intro-carousel/1.jpg-->
         <div class="carousel-inner" role="listbox">
@@ -931,7 +948,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline" style="color: white;"></i>
               <h3>Email</h3>
-              <p><a href="mailto:yashhsm@gmail.com" style="color: white;">yashhsm@gmail.com</a></p>
+              <p><a href="mailto:celbitsgoa19@gmail.com" style="color: white;">celbitsgoa19@gmail.com</a></p>
             </div>
           </div>
 
@@ -1017,7 +1034,9 @@
       <a href="https://twitter.com/CoalescenceIN/" class="twitter"><i class="fab fa-twitter fa-lg" style="padding-right: 10px;"></i></a>
         <a href="https://www.facebook.com/CEL.BITSGOA/" class="facebook"><i class="fab fa-facebook fa-lg" style="padding-right: 10px;"></i></a>
         <a href="https://medium.com/cel-bits-goa" class="medium"><i class="fab fa-medium fa-lg" style="padding-right: 10px;"></i></a>
+        <a href="https://www.instagram.com/coalescence.official/" class="instagram"><i class="fab fa-instagram fa-lg" style="padding-right: 10px;"></i></a>
         <a href="https://www.linkedin.com/company/cel.bpgc/about/" class="linkedin"><i class="fab fa-linkedin fa-lg" style="padding-right: 10px;"></i></a>
+        <a href="https://www.youtube.com/channel/UCeR9EtMpOhTPIpW2i73Ys-A" class="youtube"><i class="fab fa-youtube fa-lg" style="padding-right: 10px;"></i></a>
       </div>  
     </div>
 
@@ -1072,6 +1091,7 @@
 <script src="js/main.js"></script>
 <script src="js/script.js"></script>
 <script src="js/contact.js"></script>
+<script src="preloader/script.js"></script>
 
 
 </html>
