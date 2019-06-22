@@ -1,0 +1,86 @@
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+body
+{
+    background-image: linear-gradient(to right, gold, orange);
+}
+img
+{
+    width: 500px;
+    height: 80%;
+}
+a:hover
+{
+    background-color: brown;
+    transition: 0.7s;
+}
+a
+{
+    text-decoration: none;
+    background-color: coral;
+    padding: 15px;
+    transition: 0.7s;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    color: white;
+}
+h2
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 7rem;
+    margin-bottom: 10px;
+}
+#image
+{
+    margin: 40px;
+}
+h1  
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+#message
+{
+    margin: 20px;
+}
+@media only screen and (max-width:600px)
+{
+    img
+    {
+        width: 280px;
+    }
+    h2
+    {
+        margin-bottom: 0%;
+        margin-top: 15px;
+    }
+    .container
+    {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #message
+    {
+        margin-top: 0%;
+        padding-top: 0%;
+        text-align: center;
+    }
+    #image
+    {
+        margin-bottom: 0%;
+        margin-top: 0%;
+        padding-top: 25px;
+        padding-bottom: 0%;
+    }
+}
